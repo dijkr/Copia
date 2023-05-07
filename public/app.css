@@ -1,0 +1,121 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    /*box-sizing: border-box;*/
+    /*max-width: 1664px;*/
+    /*margin:auto*/
+}
+
+body {
+    background-color: #edf2f7;
+    max-width: 1664px;
+    margin:auto
+}
+
+h1 {
+    color: dodgerblue;
+    font-family: sans-serif;
+    margin-top: 1rem;
+    text-align: left;
+    margin-left: 2rem;
+}
+
+li {
+    list-style: none;
+    /*margin-right: 10px;*/
+}
+
+a {
+    text-decoration: none;
+    color: #edf2f7;
+}
+
+a:hover {
+    color: dodgerblue;
+}
+
+/* HEADER */
+header {
+    background-color: #2d3748;
+    padding: 1em;
+    /*text-align: center;*/
+    font-family: sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*.navbar .links {*/
+/*    font-weight: bold;*/
+/*    display: flex;*/
+/*    position: absolute;*/
+/*    left: 7rem;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+.account {
+    font-weight: bold;
+    /*position: absolute;*/
+    /*right: 2rem;*/
+}
+
+.links {
+    display: flex;
+    /*text-align: start;*/
+    gap: 1rem;
+    /*position: absolute;*/
+    /*left: 1rem;*/
+}
+
+/* DROPDOWN MENU */
+.dropdown {
+    position: absolute;
+    right: 1rem;
+    top: 60px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(25px);
+    border-radius: 10px;
+    }
+
+.dropdown {
+    align-items: center;
+    }
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 500px) {
+    .navbar .links {
+        display: none;
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*float: left;*/
+        /*!*position: absolute;*!*/
+        /*!*top: 60px;*!*/
+        /*width: 200px;*/
+        /*background: rgba(135, 145, 161, 0.5);*/
+        /*backdrop-filter: blur(25px);*/
+        /*border-radius: 10px;*/
+    }
+}
+
+@media (max-width: 800px) {
+    .navbar .links {
+        display: none;
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*float: left;*/
+        /*!*position: absolute;*!*/
+        /*!*top: 60px;*!*/
+        /*width: 200px;*/
+        /*background: rgba(135, 145, 161, 0.5);*/
+        /*backdrop-filter: blur(25px);*/
+        /*border-radius: 10px;*/
+    }
+}
