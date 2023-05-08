@@ -36,3 +36,7 @@ Route::get('/bestellen', function () {
 //Route::get('/bestellen', function () {
 //    return view('dashboard');
 //});
+
+Route::get('/grids', function () {
+    return view('grids');
+});
