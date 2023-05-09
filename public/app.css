@@ -169,6 +169,10 @@ a:hover {
     box-sizing: border-box;
 }
 
+.grid-container-1 a:hover {
+    color: #edf2f7;
+}
+
 .grid-item {
     scroll-snap-align: start;
     background-color: #2d3748;
@@ -178,27 +182,8 @@ a:hover {
     color: #edf2f7;
 }
 
-.arrow {
-    position: absolute;
-    top: 50%;
-    right: -20px;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    background-color: #ddd;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.arrow::before {
-    content: "";
-    display: block;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 10px solid #222;
+.grid-item:hover {
+    background-color: lightslategrey;
 }
 
 .grid-container-2 {
@@ -215,12 +200,12 @@ a:hover {
     margin-outside: 7rem;
 }
 
-.grid-item {
-    background-color: #2d3748;
-    padding: 20px;
-    text-align: center;
-    color: #edf2f7;
-}
+/*.grid-item {*/
+/*    background-color: #2d3748;*/
+/*    padding: 20px;*/
+/*    text-align: center;*/
+/*    color: #edf2f7;*/
+/*}*/
 
 .grid-container-3 {
     display: grid;
@@ -234,12 +219,12 @@ a:hover {
     align-items: center;
 }
 
-.grid-item {
-    background-color: #2d3748;
-    padding: 20px;
-    text-align: center;
-    color: #edf2f7;
-}
+/*.grid-item {*/
+/*    background-color: #2d3748;*/
+/*    padding: 20px;*/
+/*    text-align: center;*/
+/*    color: #edf2f7;*/
+/*}*/
 
 /* FULL PAGE */
 .fullpage {
