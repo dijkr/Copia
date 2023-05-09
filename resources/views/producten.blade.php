@@ -6,24 +6,24 @@
 </div>
 
 <div class="grid-container-1">
-    <div class="grid-item">Productcategorie 1</div>
-    <div class="grid-item">Productcategorie 2</div>
-    <div class="grid-item">Productcategorie 3</div>
-    <div class="grid-item">Productcategorie 4</div>
-    <div class="grid-item">Productcategorie 5</div>
-    <div class="grid-item">Productcategorie 6</div>
-    <div class="grid-item">Productcategorie 7</div>
-    <div class="grid-item">Productcategorie 8</div>
-    <div class="grid-item">Productcategorie 9</div>
-    <div class="grid-item">Productcategorie 10</div>
-    <div class="grid-item">Productcategorie 11</div>
-    <div class="grid-item">Productcategorie 12</div>
+    <div class="grid-item"><a href="#">Productcategorie 1</a></div>
+    <div class="grid-item"><a href="#">Productcategorie 2</a></div>
+    <div class="grid-item"><a href="#">Productcategorie 3</a></div>
+    <div class="grid-item"><a href="#">Productcategorie 4</a></div>
+    <div class="grid-item"><a href="#">Productcategorie 5</a></div>
+    <div class="grid-item"><a href="#">Productcategorie 6</a></div>
+    <div class="grid-item"><a href="#">Productcategorie 7</a></div>
+    <div class="grid-item"><a href="#">Productcategorie 8</a></div>
+    <div class="grid-item"><a href="#">Productcategorie 9</a></div>
+    <div class="grid-item"><a href="#">Productcategorie 10</a></div>
+    <div class="grid-item"><a href="#">Productcategorie 11</a></div>
+    <div class="grid-item"><a href="#">Productcategorie 12</a></div>
 </div>
 
 <div class="grid-container-2">
-    <div class="grid-item">Socialmedia</div>
-    <div class="grid-item">Nieuwsbrief aanmelding</div>
-    <div class="grid-item">Klantenservice</div>
+    <div class="grid-item"><a href="#">Socialmedia</a></div>
+    <div class="grid-item"><a href="#">Nieuwsbrief aanmelding</a></div>
+    <div class="grid-item"><a href="#">Klantenservice</a></div>
 </div>
 
 @endsection
