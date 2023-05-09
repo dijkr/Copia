@@ -9,7 +9,9 @@
 header {
     background-color: #2d3748;
     width: 1664px;
-    padding: 1em;
+    padding-left: 4em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     font-family: sans-serif;
     font-size: 16px;
     border-radius: 5px;
@@ -17,14 +19,25 @@ header {
     position: fixed;
     top: 0;
     z-index: 999;
+}
 
+/* FOOTER */
+.footer {
+    background-color: lightslategrey;
+    margin-top: 2rem;
+    font-family: sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
 }
 
 body {
     background-color: #edf2f7;
     max-width: 1664px;
     margin: 5em auto 0;
-    padding: 1em;
+    padding-top: 1em;
+    flex: 1 0 auto;
+    flex-direction: column;
 }
 
 h1 {
@@ -33,6 +46,11 @@ h1 {
     margin-top: 1rem;
     text-align: left;
     margin-left: 2rem;
+}
+
+hr {
+    margin-left: 4rem;
+    margin-right: 4rem;
 }
 
 li {
@@ -164,9 +182,6 @@ a:hover {
     justify-items: center;
     align-items: center;
     margin-bottom: 7rem;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    box-sizing: border-box;
 }
 
 .grid-container-1 a:hover {
@@ -200,6 +215,20 @@ a:hover {
     margin-outside: 7rem;
 }
 
+.grid-container-2 a:hover {
+    color: #edf2f7;
+}
+
+.grid-item-2 {
+    /*background-color: #4a5568;*/
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.grid-item-2:hover {
+    background-color: #2d3748;
+}
+
 /*.grid-item {*/
 /*    background-color: #2d3748;*/
 /*    padding: 20px;*/
@@ -217,6 +246,10 @@ a:hover {
     padding: 2rem;
     justify-items: center;
     align-items: center;
+}
+
+.grid-container-3 a:hover {
+    color: #edf2f7;
 }
 
 /*.grid-item {*/

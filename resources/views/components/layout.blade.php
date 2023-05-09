@@ -47,4 +47,14 @@
 @yield('content')
 
 </body>
+
+<div class="footer">
+    <div class="grid-container-2">
+        <div class="grid-item-2"><a href="#">Socialmedia</a></div>
+        <div class="grid-item-2"><a href="#">Nieuwsbrief aanmelding</a></div>
+        <div class="grid-item-2"><a href="#">Klantenservice</a></div>
+        Algemene voorwaarden Levering & verzending Privacybeleid Onze organisatie
+    </div>
+</div>
+
 </html>
