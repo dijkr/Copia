@@ -15,10 +15,18 @@
     </div>
 {{--    <hr>--}}
 
-    <div class="grid-container-3">
-        <div class="grid-item"><a href="#">Willekeurig aanbiedingsproduct</a></div>
-        <div class="grid-item"><a href="#">Willekeurig aanbiedingsproduct</a></div>
-        <div class="grid-item"><a href="#">Willekeurig aanbiedingsproduct</a></div>
+    <div class="grid-aanbiedingen-1">
+        <div class="grid-item-aanbiedingen-1">
+            <a href="#">Willekeurig aanbiedingsproduct</a>
+        </div>
+
+        <div class="grid-item-aanbiedingen-1">
+            <a href="#">Willekeurig aanbiedingsproduct</a>
+        </div>
+
+        <div class="grid-item-aanbiedingen-1">
+            <a href="#">Willekeurig aanbiedingsproduct</a>
+        </div>
     </div>
 
 {{--    <hr>--}}
