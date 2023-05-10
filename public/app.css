@@ -48,8 +48,8 @@ header {
 }
 
 h1 {
-    color: dodgerblue;
-    /*color: #2d3748;*/
+    /*color: dodgerblue;*/
+    color: #2d3748;
     font-family: sans-serif;
     margin-top: 1rem;
     text-align: left;
@@ -71,7 +71,7 @@ a {
 }
 
 a:hover {
-    color: dodgerblue;
+    color: black;
 }
 
 .navbar {
@@ -202,7 +202,8 @@ a:hover {
 
 .grid-item {
     scroll-snap-align: start;
-    background-color: #2d3748;
+    /*background-color: #2d3748;*/
+    background-color: #a0aec0;
     padding: 3rem;
     border-radius: 5px;
     text-align: center;
