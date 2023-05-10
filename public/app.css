@@ -8,7 +8,7 @@
 body {
     background-color: #edf2f7;
     /*max-width: 1664px;*/
-    /*width: 100%;*/
+    width: 100%;
     margin: 5em auto 0;
     /*margin-bottom: auto;*/
     padding-top: 1em;
@@ -82,10 +82,6 @@ a:hover {
     align-items: center;
     margin-left: 12%;
     margin-right: 12%;
-}
-
-.account {
-    float: right;
 }
 
 .search {
@@ -176,12 +172,12 @@ a:hover {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
-    height: 30vh;
+    /*height: 30vh;*/
     justify-items: center;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     margin-left: 5%;
-    margin-right: 5%
+    margin-right: 5%;
 }
 
 .grid-container-1 a:hover {
@@ -201,7 +197,7 @@ a:hover {
 /*}*/
 
 .grid-item {
-    scroll-snap-align: start;
+    /*scroll-snap-align: start;*/
     /*background-color: #2d3748;*/
     background-color: #a0aec0;
     padding: 3rem;
@@ -212,11 +208,15 @@ a:hover {
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
     height: 100px; /* Set the height to match the width */
+    /*margin: 1rem;*/
 }
-
 
 .grid-item:hover {
     background-color: lightslategrey;
+}
+
+.grid-item a:hover {
+    color: black;
 }
 
 .grid-container-2 {
@@ -246,7 +246,6 @@ a:hover {
 }
 
 .grid-item-2:hover {
-    /*background-color: #2d3748;*/
     background-color: white;
 }
 
@@ -274,7 +273,7 @@ a:hover {
 }
 
 .grid-container-3 a:hover {
-    color: #edf2f7;
+    color: black;
 }
 
 /*.grid-item {*/
