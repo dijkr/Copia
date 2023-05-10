@@ -43,10 +43,7 @@
 {{--    </div>--}}
 </header>
 
-</body>
 @yield('content')
-
-</body>
 
 <div class="footer">
     <div class="grid-container-2">
@@ -56,5 +53,10 @@
         Algemene voorwaarden Levering & verzending Privacybeleid Onze organisatie
     </div>
 </div>
+
+</body>
+
+
+
 
 </html>

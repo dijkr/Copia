@@ -5,16 +5,30 @@
     /*margin:auto*/
 }
 
+body {
+    background-color: #edf2f7;
+    /*max-width: 1664px;*/
+    /*width: 100%;*/
+    margin: 5em auto 0;
+    /*margin-bottom: auto;*/
+    padding-top: 1em;
+    /*flex: 1 0 auto;*/
+    flex-direction: column;
+    min-height: 100vh;
+    display: flex;
+}
+
 /* HEADER */
 header {
-    background-color: #2d3748;
-    width: 1664px;
+    background-color: #e37602;
+    /*width: 1664px;*/
+    width: 100%;
     padding-left: 4em;
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-family: sans-serif;
     font-size: 16px;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     margin: 0;
     position: fixed;
     top: 0;
@@ -23,29 +37,22 @@ header {
 
 /* FOOTER */
 .footer {
-    background-color: lightslategrey;
-    margin-top: 2rem;
+    /*background-color: lightslategrey;*/
+    background-color: #cccccc;
+    margin-top: auto;
     font-family: sans-serif;
     font-size: 16px;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     width: 100%;
-}
-
-body {
-    background-color: #edf2f7;
-    max-width: 1664px;
-    margin: 5em auto 0;
-    padding-top: 1em;
-    flex: 1 0 auto;
-    flex-direction: column;
 }
 
 h1 {
     color: dodgerblue;
+    /*color: #2d3748;*/
     font-family: sans-serif;
     margin-top: 1rem;
     text-align: left;
-    margin-left: 2rem;
+    margin-left: 10%;
 }
 
 hr {
@@ -55,7 +62,6 @@ hr {
 
 li {
     list-style: none;
-    /*margin-right: 10px;*/
 }
 
 a {
@@ -68,40 +74,31 @@ a:hover {
 }
 
 .navbar {
-    width: 100%;
+    width: 70%;
     height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 12%;
+    margin-right: 12%;
 }
 
 .account {
-    /*font-weight: bold;*/
     float: right;
-    margin-right: 2rem;
 }
 
 .search {
     float: right;
-    width: 50%;
-    margin: 1rem;
-    /*font-weight: bold;*/
-    /*position: absolute;*/
-
+    width: 40%;
 }
 
 .links {
     display: flex;
     float: left;
-    /*width: 50%;*/
-    /*text-align: start;*/
     gap: 1rem;
-    /*position: absolute;*/
-    /*left: 1rem;*/
 }
 
-
-/* CHAT GPT */
+/* CHAT GPT*/
 /*.navbar {*/
 /*    width: 100%;*/
 /*    height: 60px; !* increased height for better visibility *!*/
@@ -181,21 +178,40 @@ a:hover {
     height: 30vh;
     justify-items: center;
     align-items: center;
-    margin-bottom: 7rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%
 }
 
 .grid-container-1 a:hover {
     color: #edf2f7;
 }
 
+/*.grid-item {*/
+/*    scroll-snap-align: start;*/
+/*    background-color: #2d3748;*/
+/*    !*padding: 20px;*!*/
+/*    padding: 3rem;*/
+/*    !*height: 12rem;*!*/
+/*    !*width: 12rem;*!*/
+/*    border-radius: 5px;*/
+/*    text-align: center;*/
+/*    color: #edf2f7;*/
+/*}*/
+
 .grid-item {
     scroll-snap-align: start;
     background-color: #2d3748;
-    padding: 20px;
+    padding: 3rem;
     border-radius: 5px;
     text-align: center;
     color: #edf2f7;
+    display: flex; /* Display as flex container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100px; /* Set the height to match the width */
 }
+
 
 .grid-item:hover {
     background-color: lightslategrey;
@@ -213,6 +229,8 @@ a:hover {
     padding: 2rem;
     text-align: center;
     margin-outside: 7rem;
+    margin-left: 14%;
+    margin-right: 14%
 }
 
 .grid-container-2 a:hover {
@@ -226,7 +244,7 @@ a:hover {
 }
 
 .grid-item-2:hover {
-    background-color: #2d3748;
+    background-color: #e37602;
 }
 
 /*.grid-item {*/
@@ -243,9 +261,13 @@ a:hover {
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
     height: 20vh;
-    padding: 2rem;
+    /*padding: 1rem;*/
+    margin-bottom: 2rem;
     justify-items: center;
     align-items: center;
+    /*margin-left: 5%;*/
+    /*margin-right: 5%*/
+    /*align-items: stretch;*/
 }
 
 .grid-container-3 a:hover {
@@ -262,15 +284,19 @@ a:hover {
 /* FULL PAGE */
 .fullpage {
     color: #2d3748;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
     /*background-color: lightseagreen;*/
     /*background-color: rgba(112, 111, 115, 0.1);*/
     background-color: rgba(255, 255, 255, 0.2);
     padding: 3em;
     /*text-align: center;*/
     font-size: 16px;
-    border-radius: 10px;
+    /*border-radius: 5px;*/
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    /*border-color: lightslategrey;*/
+    margin-bottom: 3rem;
     /*margin: 0;*/
 }
 
