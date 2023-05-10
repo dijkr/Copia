@@ -38,7 +38,8 @@ header {
 /* FOOTER */
 .footer {
     /*background-color: lightslategrey;*/
-    background-color: #cccccc;
+    background-color: #e37602;;
+    /*background-color: #cccccc;*/
     margin-top: auto;
     font-family: sans-serif;
     font-size: 16px;
@@ -230,11 +231,11 @@ a:hover {
     text-align: center;
     margin-outside: 7rem;
     margin-left: 14%;
-    margin-right: 14%
+    margin-right: 14%;
 }
 
 .grid-container-2 a:hover {
-    color: #edf2f7;
+    color: black;
 }
 
 .grid-item-2 {
@@ -244,7 +245,8 @@ a:hover {
 }
 
 .grid-item-2:hover {
-    background-color: #e37602;
+    /*background-color: #2d3748;*/
+    background-color: white;
 }
 
 /*.grid-item {*/
