@@ -1,3 +1,5 @@
+@vite(['resources/css/app.css'])
+
 <!doctype html>
 <html>
 <head>
