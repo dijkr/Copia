@@ -9,7 +9,7 @@
 
 body {
     background-color: #edf2f7;
-    /*background-color: lightgrey;*/
+    /*background-color: black;*/
     /*max-width: 1664px;*/
     width: 100%;
     margin: 5em auto 0;
@@ -46,7 +46,8 @@ a {
 }
 
 a:hover {
-    color: black;
+    /*color: black;*/
+    text-decoration: underline;
 }
 
 /* HEADER */
@@ -69,7 +70,7 @@ header {
 /* HEADER NAVIGATION BAR */
 .navbar {
     width: 70%;
-    height: 40px;
+    height: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,12 +92,17 @@ header {
     width: 100%; /* Make input element fill parent container */
     box-sizing: border-box; /* Include padding and border in element width */
     text-align: center;
+    border-radius: 20px;
 }
 
 .links {
     display: flex;
     float: left;
     gap: 1rem;
+}
+
+.fa-user {
+    /*margin-top: 6px;*/
 }
 
 /* CHAT GPT*/
@@ -198,17 +204,19 @@ footer {
 }
 
 .grid-item-footer-1 a:hover {
-    color: black;
+    /*color: black;*/
 }
 
 .grid-item-footer-1 {
     /*background-color: #4a5568;*/
+    /*color: #2d3748;*/
+    color: white;
     padding: 1em;
     border-radius: 5px;
 }
 
 .grid-item-footer-1:hover {
-    background-color: white;
+    /*background-color: white;*/
 }
 
 /*.grid-item {*/
@@ -263,7 +271,7 @@ footer {
 }
 
 .grid-item-products-1 a:hover {
-    color: black;
+    /*color: black;*/
 }
 
 /* AANBIEDINGEN GRID */
@@ -291,9 +299,6 @@ footer {
 }
 
 /* AANBIEDINGEN GRID ITEM 1*/
-.grid-item-aanbiedingen-1 a:hover {
-    color: black;
-}
 
 .grid-item-aanbiedingen-1{
     /*scroll-snap-align: start;*/
@@ -316,7 +321,7 @@ footer {
 }
 
 .grid-item-aanbiedingen-1 a:hover {
-    color: black;
+    /*color: black;*/
 }
 
 /*.grid-item {*/
@@ -351,5 +356,5 @@ footer {
 }
 
 .fullpage a:hover {
-    color: dodgerblue;
+    /*color: dodgerblue;*/
 }

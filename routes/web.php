@@ -33,10 +33,11 @@ Route::get('/bestellen', function () {
     return view('bestellen');
 });
 
-//Route::get('/bestellen', function () {
-//    return view('dashboard');
-//});
-
-Route::get('/grids', function () {
-    return view('grids');
+Route::get('/dashboard', function () {
+    return view('dashboard');
 });
+
+Route::get('/productcategorie/($id)', function () {
+    return view('productcategorie');
+});
+
