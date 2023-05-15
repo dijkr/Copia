@@ -15,8 +15,13 @@
             <a href="#"><i class="fa-brands fa-whatsapp fa-xl" style="color: #ffffff;"></i></a>
         </div>
 
-        <div class="grid-item-footer-1">
+
+        {{-- LINKS --}}
+        <div class="grid-item-footer-2">
+        <a href="/" style="color: #1a202c">Algemene voorwaarden</a>
+        <a href="/">Levering & verzending</a>
+        <a href="/">Privacybeleid</a>
+        <a href="/">Onze organisatie</a>
         </div>
-        Algemene voorwaarden Levering & verzending Privacybeleid Onze organisatie
     </div>
 </footer>

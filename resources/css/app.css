@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Open Sans', sans-serif;
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
     /*max-width: 1664px;*/
     /*margin:auto*/
 }
@@ -11,7 +11,8 @@ body {
     background-color: #edf2f7;
     /*background-color: black;*/
     /*max-width: 1664px;*/
-    width: 100%;
+    /*width: 100%;*/
+    /*max-width: 1664px;*/
     margin: 5em auto 0;
     /*margin-bottom: auto;*/
     /*padding-top: 1em;*/
@@ -144,24 +145,17 @@ header {
 }
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 500px) {
-    .navbar .links {
-        display: none;
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*float: left;*/
-        /*!*position: absolute;*!*/
-        /*!*top: 60px;*!*/
-        /*width: 200px;*/
-        /*background: rgba(135, 145, 161, 0.5);*/
-        /*backdrop-filter: blur(25px);*/
-        /*border-radius: 10px;*/
-    }
+/* For mobile phones: */
+{
+    width: 100%;
 }
 
-@media (max-width: 800px) {
-    .navbar .links {
-        display: none;
+@media (min-width: 500px) {
+}
+
+
+@media screen and (min-width: 768px) {
+    /* For desktop: */ {
         /*display: flex;*/
         /*flex-direction: column;*/
         /*float: left;*/
@@ -191,19 +185,19 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
-    grid-template-rows: repeat(3, 1fr);
-    gap: 30px;
-    /*height: 20vh;*/
+    grid-template-rows: repeat(1, 1fr);
+    height: 20vh;
     /*justify-items: center;*/
     /*align-items: center;*/
     padding: 2rem;
     text-align: center;
-    margin-outside: 7rem;
     margin-left: 14%;
     margin-right: 14%;
+    /*padding-bottom: 2em;*/
 }
 
-.grid-item-footer-1 a:hover {
+.grid-footer-1 a:hover {
+    /*text-decoration: none;*/
     /*color: black;*/
 }
 
@@ -215,8 +209,12 @@ footer {
     border-radius: 5px;
 }
 
-.grid-item-footer-1:hover {
-    /*background-color: white;*/
+.grid-item-footer-2 {
+    /*padding: 2em;*/
+}
+
+.grid-item-footer-2 a {
+    color: black;
 }
 
 /*.grid-item {*/
@@ -248,6 +246,7 @@ footer {
 
 .grid-products-1 a:hover {
     color: #edf2f7;
+    text-decoration: none;
 }
 
 .grid-item-products-1 {
@@ -268,10 +267,6 @@ footer {
 
 .grid-item-products-1:hover {
     background-color: lightslategrey;
-}
-
-.grid-item-products-1 a:hover {
-    /*color: black;*/
 }
 
 /* AANBIEDINGEN GRID */
@@ -298,6 +293,10 @@ footer {
     /*align-items: stretch;*/
 }
 
+.grid-aanbiedingen-1 a:hover {
+    text-decoration: none;
+}
+
 /* AANBIEDINGEN GRID ITEM 1*/
 
 .grid-item-aanbiedingen-1{
@@ -318,10 +317,6 @@ footer {
 
 .grid-item-aanbiedingen-1:hover {
     background-color: lightslategrey;
-}
-
-.grid-item-aanbiedingen-1 a:hover {
-    /*color: black;*/
 }
 
 /*.grid-item {*/

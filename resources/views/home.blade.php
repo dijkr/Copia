@@ -16,17 +16,9 @@
 {{--    <hr>--}}
 
     <div class="grid-aanbiedingen-1">
-        <div class="grid-item-aanbiedingen-1">
-            <a href="#">Willekeurig aanbiedingsproduct</a>
-        </div>
-
-        <div class="grid-item-aanbiedingen-1">
-            <a href="#">Willekeurig aanbiedingsproduct</a>
-        </div>
-
-        <div class="grid-item-aanbiedingen-1">
-            <a href="#">Willekeurig aanbiedingsproduct</a>
-        </div>
+        <a href="/"><div class="grid-item-aanbiedingen-1">Willekeurig aanbiedingsproduct</div></a>
+        <a href="/"><div class="grid-item-aanbiedingen-1">Willekeurig aanbiedingsproduct</div></a>
+        <a href="/"><div class="grid-item-aanbiedingen-1">Willekeurig aanbiedingsproduct</div></a>
     </div>
 
 {{--    <hr>--}}
