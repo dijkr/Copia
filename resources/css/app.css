@@ -70,18 +70,22 @@ header {
 
 /* HEADER NAVIGATION BAR */
 .navbar {
-    width: 70%;
-    height: 30px;
+    /*width: 70%;*/
+    /*height: 30px;*/
+    /*margin-left: 12%;*/
+    /*margin-right: 12%;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 12%;
-    margin-right: 12%;
+    padding: 0 20px;
 }
 
 .search {
-    float: right;
-    width: 20%;
+    flex: 1;
+    max-width: 250px;
+    margin-left: 20px;
+    /*float: right;*/
+    /*width: 20%;*/
     border-radius: 20px; /* Add rounded border */
     overflow: hidden; /* Hide overflow content */
     background-color: #f0f0f0;
@@ -97,37 +101,12 @@ header {
 }
 
 .links {
-    display: flex;
-    float: left;
-    gap: 1rem;
+    display: none;
 }
 
 .fa-user {
     /*margin-top: 6px;*/
 }
-
-/* CHAT GPT*/
-/*.navbar {*/
-/*    width: 100%;*/
-/*    height: 60px; !* increased height for better visibility *!*/
-/*    display: flex;*/
-/*    flex-direction: column; !* added to set flex direction to column *!*/
-/*    justify-content: center; !* added to center the child elements vertically *!*/
-/*    align-items: flex-start; !* changed to align the items to the left *!*/
-/*}*/
-
-/*.links {*/
-/*    display: flex;*/
-/*    gap: 1rem;*/
-/*}*/
-
-/*.search {*/
-/*    padding-left: 3rem;*/
-/*}*/
-
-/*.account {*/
-/*    margin-left: auto;*/
-/*}*/
 
 /* DROPDOWN MENU */
 .dropdown {
@@ -145,26 +124,23 @@ header {
 }
 
 /* RESPONSIVE DESIGN */
-/* For mobile phones: */
-{
-    width: 100%;
-}
-
-@media (min-width: 500px) {
-}
-
-
 @media screen and (min-width: 768px) {
-    /* For desktop: */ {
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*float: left;*/
-        /*!*position: absolute;*!*/
-        /*!*top: 60px;*!*/
-        /*width: 200px;*/
-        /*background: rgba(135, 145, 161, 0.5);*/
-        /*backdrop-filter: blur(25px);*/
-        /*border-radius: 10px;*/
+    .navbar {
+        padding: 0 50px;
+        /*width: 70%;*/
+        /*height: 30px;*/
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+    .search {
+        max-width: 400px;
+        margin-left: 50px;
+    }
+
+    .links {
+        display: flex;
+        gap: 1rem;
     }
 }
 
@@ -186,7 +162,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
     grid-template-rows: repeat(1, 1fr);
-    height: 20vh;
+    /*height: 20vh;*/
     /*justify-items: center;*/
     /*align-items: center;*/
     padding: 2rem;
@@ -202,27 +178,26 @@ footer {
 }
 
 .grid-item-footer-1 {
-    /*background-color: #4a5568;*/
-    /*color: #2d3748;*/
     color: white;
     padding: 1em;
     border-radius: 5px;
 }
 
-.grid-item-footer-2 {
-    /*padding: 2em;*/
+.grid-footer-2 {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(1, 1fr);
+    /*grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));*/
+    grid-template-rows: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
 }
 
-.grid-item-footer-2 a {
+.grid-footer-2 a {
     color: black;
 }
-
-/*.grid-item {*/
-/*    background-color: #2d3748;*/
-/*    padding: 20px;*/
-/*    text-align: center;*/
-/*    color: #edf2f7;*/
-/*}*/
 
 /* PRODUCTS GRID */
 .grid-products-1 {
@@ -325,6 +300,20 @@ footer {
 /*    text-align: center;*/
 /*    color: #edf2f7;*/
 /*}*/
+
+@media screen and (max-width: 767px) {
+    .grid-aanbiedingen-1 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .grid-aanbiedingen-1 {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
 
 /* FULLPAGE ITEM */
 .fullpage {
