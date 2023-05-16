@@ -6,11 +6,36 @@
     </div>
 
     <div class="grid-products-1">
-        <a href="/productcategorie/1"><div class="grid-item-products-1">Productcategorie 1</div></a>
-        <a href="/productcategorie/2"><div class="grid-item-products-1">Productcategorie 2</div></a>
-        <a href="/productcategorie/3"><div class="grid-item-products-1">Productcategorie 3</div></a>
-        <a href="/productcategorie/4"><div class="grid-item-products-1">Productcategorie 4</div></a>
-        <a href="/productcategorie/5"><div class="grid-item-products-1">Productcategorie 5</div></a>
+        <a href="#">
+        <div class="grid-item-products-1">
+            <img src="{{Vite::asset('resources/backend/assets/img/Groenten.png')}}">
+            <div class="overlay-text-products">Groenten</div>
+        </div></a>
+
+    <a href="#">
+        <div class="grid-item-products-1">
+            <img src="{{Vite::asset('resources/backend/assets/img/Broden.png')}}">
+            <div class="overlay-text-products">Broden</div>
+        </div></a>
+
+        <a href="#">
+            <div class="grid-item-products-1">
+                <img src="{{Vite::asset('resources/backend/assets/img/fruits.jpg')}}">
+                <div class="overlay-text-products">Fruit</div>
+            </div></a>
+
+        <a href="#">
+            <div class="grid-item-products-1">
+                <img src="{{Vite::asset('resources/backend/assets/img/frisdrank.jpg')}}">
+                <div class="overlay-text-products">Frisdrank</div>
+            </div></a>
+
+        <a href="#">
+            <div class="grid-item-products-1">
+                <img src="{{Vite::asset('resources/backend/assets/img/koffie-thee.png')}}">
+                <div class="overlay-text-products">Koffie en Thee</div>
+            </div></a>
+
         <a href="/productcategorie/6"><div class="grid-item-products-1">Productcategorie 6</div></a>
         <a href="/productcategorie/7"><div class="grid-item-products-1">Productcategorie 7</div></a>
         <a href="/productcategorie/8"><div class="grid-item-products-1">Productcategorie 8</div></a>
