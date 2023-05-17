@@ -27,6 +27,9 @@
 
         {{-- ICONS --}}
     <div class="grid-footer-3">
+
+        <div class="copyright">© 2023 Copia Supermarkten</div>
+
         <div class="grid-item-footer-3">
             <a href="#">
                 <img src="{{Vite::asset('resources/backend/assets/img/iconen/ideal.svg')}}">

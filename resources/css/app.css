@@ -100,7 +100,7 @@ header {
     .navbar {
         display: flex;
         justify-content: space-evenly;
-        margin-right: 2rem;
+        margin-right: 3rem;
     }
 
     .fa-bars {
@@ -148,6 +148,7 @@ footer {
     border-radius: 5px;
 }
 
+/* LINKS */
 .grid-footer-2 {
     display: flex;
     flex-wrap: wrap;
@@ -161,11 +162,12 @@ footer {
     color: black;
 }
 
+/* ICONS */
 .grid-footer-3 {
     display: flex;
     width: 100%;
-    justify-content: flex-end;
-    padding-right: 2rem;
+    justify-content: center;
+    padding-right: 3rem;
 }
 
 .grid-footer-3 img {
@@ -175,6 +177,16 @@ footer {
 
 .grid-item-footer-3 {
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* COPYRIGHT */
+.copyright {
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 /* RESPONSIVE FOOTER */
