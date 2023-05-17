@@ -19,24 +19,31 @@
         {{-- LINKS --}}
     <div class="grid-footer-2">
 {{--        <div class="grid-item-footer-2">--}}
-        <a href="/" style="color: #1a202c">Algemene voorwaarden</a>
-        <a href="/">Levering & verzending</a>
-        <a href="/">Privacybeleid</a>
-        <a href="/">Onze organisatie</a>
+        <a href="#" style="color: #1a202c">Algemene voorwaarden</a>
+        <a href="#">Levering & verzending</a>
+        <a href="#">Privacybeleid</a>
+        <a href="#">Onze organisatie</a>
     </div>
 
         {{-- ICONS --}}
     <div class="grid-footer-3">
         <div class="grid-item-footer-3">
-            <a href="/"><img src="{{Vite::asset('resources/backend/assets/img/iconen/ideal.svg')}}"></a>
+            <a href="#">
+                <img src="{{Vite::asset('resources/backend/assets/img/iconen/ideal.svg')}}">
+            </a>
         </div>
 
-        <div class="grid-item-footer-3"><a href="/">
-            <img src="{{Vite::asset('resources/backend/assets/img/iconen/pin.svg')}}"></a>
+        <div class="grid-item-footer-3">
+            <a href="#">
+                <img src="{{Vite::asset('resources/backend/assets/img/iconen/pin.svg')}}">
+            </a>
         </div>
 
-        <div class="grid-item-footer-3"><a href="/">
-            <img src="{{Vite::asset('resources/backend/assets/img/iconen/thuiswinkelwaarborg-business.svg')}}"></a>
+        <div class="grid-item-footer-3">
+            <a href="#">
+                <img src="{{Vite::asset('resources/backend/assets/img/iconen/thuiswinkelwaarborg-business.svg')}}">
+            </a>
         </div>
     </div>
+
 </footer>
