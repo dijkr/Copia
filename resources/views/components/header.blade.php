@@ -7,6 +7,9 @@
             <li><a href="/aanbiedingen">Aanbiedingen</a></li>
             <li><a href="/winkelwagen">Winkelwagen</a></li>
             <li><a href="/bestellen">Bestellen</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                </a></li>
         </ul>
             <div class="search"><input type="text" placeholder="Zoeken.."></div>
 

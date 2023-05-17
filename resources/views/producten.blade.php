@@ -36,13 +36,48 @@
                 <div class="overlay-text-products">Koffie en Thee</div>
             </div></a>
 
-        <a href="/productcategorie/6"><div class="grid-item-products-1">Productcategorie 6</div></a>
-        <a href="/productcategorie/7"><div class="grid-item-products-1">Productcategorie 7</div></a>
-        <a href="/productcategorie/8"><div class="grid-item-products-1">Productcategorie 8</div></a>
-        <a href="/productcategorie/9"><div class="grid-item-products-1">Productcategorie 9</div></a>
-        <a href="/productcategorie/10"><div class="grid-item-products-1">Productcategorie 10</div></a>
-        <a href="/productcategorie/11"><div class="grid-item-products-1">Productcategorie 11</div></a>
-        <a href="/productcategorie/12"><div class="grid-item-products-1">Productcategorie 12</div></a>
+        <a href="#">
+            <div class="grid-item-products-1">
+                <img src="{{Vite::asset('resources/backend/assets/img/vleeswaren.jpg')}}">
+                <div class="overlay-text-products">Vleeswaren</div>
+            </div></a>
+
+        <a href="#">
+            <div class="grid-item-products-1">
+                <img src="{{Vite::asset('resources/backend/assets/img/maaltijden.png')}}">
+                <div class="overlay-text-products">Maaltijden</div>
+            </div></a>
+
+        <a href="#">
+            <div class="grid-item-products-1">
+                <img src="{{Vite::asset('resources/backend/assets/img/snoep.png')}}">
+                <div class="overlay-text-products">Snoep, Koek, Chocola, Chips</div>
+            </div></a>
+
+        <a href="#">
+            <div class="grid-item-products-1">
+                <img src="{{Vite::asset('resources/backend/assets/img/zuivel.png')}}">
+                <div class="overlay-text-products">Zuivel</div>
+            </div></a>
+
+        <a href="#">
+            <div class="grid-item-products-1">
+                <img src="{{Vite::asset('resources/backend/assets/img/tandpasta.png')}}">
+                <div class="overlay-text-products">Drogisterij</div>
+            </div></a>
+
+        <a href="#">
+            <div class="grid-item-products-1">
+                <img src="{{Vite::asset('resources/backend/assets/img/baby.png')}}">
+                <div class="overlay-text-products">Baby en Kind</div>
+            </div></a>
+
+        <a href="#">
+            <div class="grid-item-products-1">
+                <img src="{{Vite::asset('resources/backend/assets/img/huisdier.png')}}">
+                <div class="overlay-text-products">Huisdieren</div>
+            </div></a>
+
     </div>
 
 @endsection

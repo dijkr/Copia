@@ -200,8 +200,7 @@ footer {
 }
 
 .grid-item-products-1 {
-    /*background-color: #a0aec0;*/
-    background-color: lightgrey;
+    background-color: #eee;
     padding: 0.2rem 0.2rem 4em;
     border-radius: 5px;
     text-align: center;
