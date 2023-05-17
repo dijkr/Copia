@@ -2,10 +2,9 @@
 
 @section('content')
     <div class="content">
-        <h1>Welkom, bezoeker</h1>
+        <h1>Welkom bij Copia</h1>
     </div>
 
-{{--    <hr>--}}
     <div class="fullpage">
         <div class="item">
             <h2>Aanbiedingsactie</h2>
@@ -13,13 +12,45 @@
             <a href="#">Aanbieding</a>
         </div>
     </div>
-{{--    <hr>--}}
+
+    {{-- ACTIES --}}
+    <div class="actie">
+    <div class="actie-heading">
+        <h1>Actie</h1>
+        Tot en met zondag 21 mei
+    </div>
 
     <div class="grid-aanbiedingen-1">
-        <a href="/"><div class="grid-item-aanbiedingen-1">Willekeurig aanbiedingsproduct</div></a>
-        <a href="/"><div class="grid-item-aanbiedingen-1">Willekeurig aanbiedingsproduct</div></a>
-        <a href="/"><div class="grid-item-aanbiedingen-1">Willekeurig aanbiedingsproduct</div></a>
+    <a href="#">
+        <div class="grid-item-aanbiedingen-1">
+            <img src="{{Vite::asset('resources/backend/assets/img/bananen.png')}}">
+            <div class="overlay-text-products">Chicuita banenen 5 stuks</div>
+        </div>
+    </a>
+
+        <a href="#">
+            <div class="grid-item-aanbiedingen-1">
+                <img src="{{Vite::asset('resources/backend/assets/img/chocola.png')}}">
+                <div class="overlay-text-products">Côte d'Or Bonbonbloc melk 200g</div>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="grid-item-aanbiedingen-1">
+                <img src="{{Vite::asset('resources/backend/assets/img/tomaten.png')}}">
+                <div class="overlay-text-products">Tomaten 1kg</div>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="grid-item-aanbiedingen-1">
+                <img src="{{Vite::asset('resources/backend/assets/img/kattenvoer.png')}}">
+                <div class="overlay-text-products">Kattenvoer</div>
+            </div>
+        </a>
+
     </div>
+</div>
 
 {{--    <hr>--}}
     <div class="fullpage">

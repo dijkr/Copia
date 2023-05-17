@@ -31,21 +31,15 @@
         <div class="copyright">© 2023 Copia Supermarkten</div>
 
         <div class="grid-item-footer-3">
-            <a href="#">
                 <img src="{{Vite::asset('resources/backend/assets/img/iconen/ideal.svg')}}">
-            </a>
         </div>
 
         <div class="grid-item-footer-3">
-            <a href="#">
                 <img src="{{Vite::asset('resources/backend/assets/img/iconen/pin.svg')}}">
-            </a>
         </div>
 
         <div class="grid-item-footer-3">
-            <a href="#">
                 <img src="{{Vite::asset('resources/backend/assets/img/iconen/thuiswinkelwaarborg-business.svg')}}">
-            </a>
         </div>
     </div>
 
