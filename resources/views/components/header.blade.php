@@ -1,9 +1,16 @@
 <header>
 
+    {{-- LOGO DEFAULT --}}
+    <div class="logo">
+        <img src="{{Vite::asset('resources/backend/assets/img/logo/copia-logo.png')}}">
+    </div>
+
+    {{-- LOGO MOBILE --}}
+
     {{-- NAVIGATION BAR --}}
     <div class="navbar">
 
-    {{-- MENU --}}
+    {{-- MENU DEFAULT --}}
     <div class="menu">
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="fa-solid fa-bars" style="color: #ffffff"></label>
@@ -16,7 +23,7 @@
         </ul>
         </div>
 
-
+    {{-- MENU MOBILE --}}
 
     {{-- SEARCH --}}
     <div class="search"><input type="text" placeholder="Zoeken.."></div>

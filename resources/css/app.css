@@ -23,6 +23,7 @@ body {
 }
 
 h1 {
+    margin-top: 2rem; /* SPACE NEEDED TO APPEAR UNDER THE HEADER */
     color: #2d3748;
     font-family: sans-serif;
 }
@@ -61,9 +62,19 @@ header {
     position: fixed;
     z-index: 999;
     gap: 2rem;
-    align-items: center;
     /*box-shadow: 5px 5px 5px #888888;*/
 }
+
+.logo {
+    display: flex;
+    border-radius: 5px;
+    padding-left: 1rem;
+}
+
+.logo img {
+    width: 200px;
+}
+
 
 /* HEADER NAVIGATION BAR */
 .navbar {
@@ -149,10 +160,20 @@ header.background {
 }
 
 /* RESPONSIVE HEADER FOR WIDER SCREEN*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1500px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        margin-left: 2%;
+    }
+
     .navbar {
-        justify-content: center;
         gap: 2rem;
+        margin-right: 30%;
     }
 
     .fa-bars {
