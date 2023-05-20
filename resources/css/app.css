@@ -51,21 +51,20 @@ img {
 
 /* HEADER GENERAL AND MOBILE */
 header {
-    background-color: #e37602;
+    background-color: rgba(104,172,72,1.0);
     width: 100vw;
-    padding: 1rem;
-    font-size: 16px;
     margin: 0;
     position: fixed;
     top: 0;
     z-index: 999;
     gap: 2rem;
+    align-items: center;
     /*box-shadow: 5px 5px 5px #888888;*/
 }
 
 /* HEADER NAVIGATION BAR */
 .navbar {
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,7 +82,7 @@ header {
     display: none;
 }
 
-.menu-icon {
+.fa-bars {
     display: inline-block;
     cursor: pointer;
 }
@@ -91,19 +90,12 @@ header {
 .menu-items {
     display: none;
     /*position: absolute;*/
+    margin: 0;
     top: 100%;
     left: 0;
-    background-color: #e37602;
+    background-color: rgba(104,172,72,1.0);
     padding: 10px;
-    border-radius: 0 0 5px 5px;
-}
-
-.menu-items.show {
-    display: block;
-}
-
-.menu-items li {
-    display: block;
+    border-radius: 0 5px 5px 0;
 }
 
 .menu-items a {
@@ -127,6 +119,13 @@ header {
     border-radius: 20px;
 }
 
+
+/* USED FOR JAVASCRIPT TO ADJUST THE MENU ON CLICK*/
+.menu-items.show {
+    display: block;
+    padding-right: 50vw;
+}
+
 .search.hide {
     display: none;
 }
@@ -135,11 +134,16 @@ header {
     display: none;
 }
 
+header.background {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+
 /* RESPONSIVE HEADER FOR WIDER SCREEN*/
 @media screen and (min-width: 768px) {
     .navbar {
-        display: flex;
         justify-content: center;
+        gap: 2rem;
     }
 
     .fa-bars {
@@ -149,8 +153,7 @@ header {
 
     .menu-items {
         display: flex;
-        flex-direction: row;
-        /*gap: 1rem;*/
+        gap: 1rem;
     }
 
     .menu-items .search .fa-user {
@@ -164,7 +167,7 @@ header {
 
 /* FOOTER */
 footer {
-    background-color: #e37602;
+    background-color: rgba(104,172,72,1.0);
     /*background-color: darkgrey;*/
     /*background-color: burlywood;*/
     width: 100vw;
@@ -359,11 +362,11 @@ footer {
 .grid-aanbiedingen-1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     border-radius: 5px;
     padding: 1em;
     width: 100%;
-    margin-bottom: 1rem;
+    gap: 1rem;
 }
 
 .grid-aanbiedingen-1 a:hover {
@@ -378,7 +381,7 @@ footer {
     color: #edf2f7;
     width: 18rem;
     height: 18rem;
-    padding: 0.2rem 0.2rem 5em;
+    padding: 1rem 0.2rem 5em;
     position: relative;
     overflow: hidden;
     /*margin-bottom: 1rem;*/
