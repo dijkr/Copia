@@ -1,8 +1,14 @@
+<?php
+    setlocale(LC_TIME, 'nl_NL'); // Set the locale to Dutch
+    $date = strftime("%A %e %B"); // Current date format = e.g. zondag 21 mei
+    $week = strftime("%W"); // Number of the week
+?>
+
 @extends('components.layout')
 
 @section('content')
     <div class="content">
-        <h1>Welkom bij Copia</h1>
+        <h1 id="title">Welkom bij Copia</h1>
     </div>
 
     <div class="fullpage">
@@ -16,8 +22,8 @@
     {{-- ACTIES --}}
     <div class="actie">
     <div class="actie-heading">
-        <h1>Actie</h1>
-        Tot en met zondag 21 mei
+        <h2>Acties week {{ $week }}</h2>
+        <div class="actie-text" id="actie-text">Tot en met {{ $date }}</div>
     </div>
 
     <div class="grid-aanbiedingen-1">
@@ -78,5 +84,3 @@
     {{--</div>--}}
 
 @endsection
-
-

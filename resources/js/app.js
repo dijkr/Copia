@@ -1,5 +1,8 @@
 import './bootstrap';
 
+/* CONSOLE MESSAGE */
+console.log("%cWelcome to the webpage of COPIA supermarkten. Contact us at contact@copia.nl", "color: yellow; font-weight: bold;");
+
 /* HAMBURGER MENU BAR */
 var bar = document.querySelector('.fa-bars');
 var menuToggle = document.getElementById('menu-toggle');
