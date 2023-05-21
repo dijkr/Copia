@@ -2,7 +2,7 @@
                 FOOTER
 =============================================================================== -->
 
-<footer>
+<footer id="main-footer">
     <div class="grid-footer-1">
 
         {{-- SOCIAL MEDIA --}}

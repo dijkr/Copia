@@ -34,7 +34,7 @@
 {{--        <a href="#"><i class="fa-solid fa-magnifying-glass fa-rotate-90" style="color: #ffffff;"></i></a>--}}
 
     {{-- ACCOUNT --}}
-    <a href="/dashboard"><i class="fa-user fa-solid fa-xl" style="color: #ffffff;"></i></a>
+    <a href="#"><i class="fa-user fa-solid fa-xl" style="color: #ffffff;"></i></a>
     </div>
     {{-- END NAVIGATION BAR --}}
 
