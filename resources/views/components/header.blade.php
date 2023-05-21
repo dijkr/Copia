@@ -1,9 +1,7 @@
 <header>
 
     {{-- LOGO DEFAULT --}}
-    <div class="logo">
-        <img src="{{Vite::asset('resources/backend/assets/img/logo/copia-logo.png')}}">
-    </div>
+    <div class="logo">COPIA</div>
 
     {{-- LOGO MOBILE --}}
 
@@ -34,5 +32,6 @@
     {{-- ACCOUNT --}}
     <a href="/dashboard"><i class="fa-user fa-solid fa-xl" style="color: #ffffff;"></i></a>
     </div>
+    {{-- END NAVIGATION BAR --}}
 
 </header>

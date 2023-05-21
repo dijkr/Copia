@@ -66,9 +66,9 @@ header {
 }
 
 .logo {
-    display: flex;
-    border-radius: 5px;
-    padding-left: 1rem;
+    font-size: 20px;
+    color: yellow;
+    display: none;
 }
 
 .logo img {
@@ -160,7 +160,7 @@ header.background {
 }
 
 /* RESPONSIVE HEADER FOR WIDER SCREEN*/
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 728px) {
     header {
         display: flex;
         justify-content: space-between;
@@ -169,6 +169,7 @@ header.background {
 
     .logo {
         margin-left: 2%;
+        display: flex;
     }
 
     .navbar {
@@ -191,6 +192,13 @@ header.background {
     }
 
     .search {
+       display: none;
+    }
+}
+
+@media screen and (min-width: 1340px) {
+    .search {
+        display: flex;
         max-width: 400px;
     }
 }
@@ -198,8 +206,6 @@ header.background {
 /* FOOTER */
 footer {
     background-color: rgba(104,172,72,1.0);
-    /*background-color: darkgrey;*/
-    /*background-color: burlywood;*/
     width: 100vw;
     margin-top: auto;
     font-family: sans-serif;
@@ -288,7 +294,7 @@ footer {
 
 .grid-item-products-1 {
     background-color: #eee;
-    padding: 0.2rem 0.2rem 4em;
+    padding: 1rem 1rem 4em;
     border-radius: 5px;
     text-align: center;
     color: #edf2f7;
@@ -356,6 +362,12 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
     }
+
+    .grid-item-products-1 {
+        width: 14rem;
+        height: 14rem;
+
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -363,12 +375,24 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
+
+    .grid-item-products-1 {
+        width: 16rem;
+        height: 16rem;
+
+    }
 }
 
 @media screen and (max-width: 480px) {
     .grid-products-1 {
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+
+    .grid-item-products-1 {
+        width: 16rem;
+        height: 16rem;
+
     }
 }
 
