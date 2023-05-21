@@ -294,6 +294,10 @@ footer {
     padding: 1em;
     background-color: white;
     border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
     /*overflow: scroll;*/
 }
 
@@ -311,8 +315,8 @@ footer {
     display: flex; /* Display as flex container */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    width: 12rem;
-    height: 12rem;
+    width: 14rem;
+    height: 14rem;
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -401,8 +405,8 @@ footer {
     }
 
     .grid-item-products-1 {
-        width: 16rem;
-        height: 16rem;
+        width: 18rem;
+        height: 18rem;
 
     }
 }
@@ -417,6 +421,9 @@ footer {
     background-color: white;
     width: 90%;
     margin-bottom: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
 }
 
 .actie h2 {
@@ -503,6 +510,9 @@ footer {
     border-radius: 5px;
     margin-bottom: 1rem;
     width: 90%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
 }
 
 .fullpage a {
