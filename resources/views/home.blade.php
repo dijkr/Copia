@@ -13,7 +13,7 @@
 
     <div class="aanbiedingsactie">
         <div class="aanbiedingsactie-item">
-            <img src="{{Vite::asset('resources/backend/assets/img/banners/banner_green.png')}}">
+            <img src="{{Vite::asset('resources/backend/assets/img/banners/banner_food.jpeg')}}">
             <div class="text-overlay-actie">
             <h2>Aanbiedingsactie</h2>
             <h3>subkop aanbiedingsactie</h3>
@@ -23,51 +23,59 @@
     </div>
 
     {{-- ACTIES --}}
-    <div class="actie">
-    <div class="actie-heading">
-        <h2>Acties week {{ $week }}</h2>
-        <div class="actie-text" id="actie-text">Tot en met {{ $date }}</div>
+<div class="grid-actie-parent">
+
+    <div class="grid-actie">
+        <a href="#">
+            <div class="grid-actie-left">
+                <h4>Aanbiedingsproduct</h4>
+                Korte omschrijving
+            </div>
+
+            <div class="grid-actie-right">
+                <img src="{{Vite::asset('resources/backend/assets/img/bananen.png')}}">
+                3.00 EUR
+            </div>
+        </a>
     </div>
 
-    <div class="grid-aanbiedingen-1">
-    <a href="#">
-        <div class="grid-item-aanbiedingen-1">
-            <img src="{{Vite::asset('resources/backend/assets/img/bananen.png')}}">
-            <div class="overlay-text-products">Chiquita banenen 5 stuks</div>
-        </div>
-    </a>
-
+    <div class="grid-actie">
         <a href="#">
-            <div class="grid-item-aanbiedingen-1">
+            <div class="grid-actie-left">
+                <h4>Aanbiedingsproduct</h4>
+                Korte omschrijving
+            </div>
+
+            <div class="grid-actie-right">
                 <img src="{{Vite::asset('resources/backend/assets/img/chocola.png')}}">
-                <div class="overlay-text-products">Côte d'Or Bonbonbloc melk 200g</div>
+                3.00 EUR
             </div>
         </a>
+    </div>
 
+    <div class="grid-actie">
         <a href="#">
-            <div class="grid-item-aanbiedingen-1">
+            <div class="grid-actie-left">
+                <h4>Aanbiedingsproduct</h4>
+                Korte omschrijving
+                </div>
+
+            <div class="grid-actie-right">
                 <img src="{{Vite::asset('resources/backend/assets/img/tomaten.png')}}">
-                <div class="overlay-text-products">Tomaten 1kg</div>
+                3.00 EUR
             </div>
         </a>
-
-        <a href="#">
-            <div class="grid-item-aanbiedingen-1">
-                <img src="{{Vite::asset('resources/backend/assets/img/kattenvoer.png')}}">
-                <div class="overlay-text-products">Kattenvoer</div>
-            </div>
-        </a>
-
     </div>
 </div>
 
+    {{-- NIEUWS --}}
     <div class="nieuws">
         <div class="nieuws-item">
-            <img src="{{Vite::asset('resources/backend/assets/img/banners/banner_green.png')}}">
-            <div class="text-overlay-nieuws">
+            <img src="{{Vite::asset('resources/backend/assets/img/banners/banner_meal.png')}}">
+        <div class="text-overlay-nieuws">
             <h2>Nieuwbericht</h2>
             <h3>Korte tekst nieuwsbericht</h3>
-            <a href="#">Aanbieding</a>
+            <a href="#">Volledige tekst</a>
         </div>
         </div>
     </div>

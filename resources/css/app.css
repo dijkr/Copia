@@ -1,7 +1,7 @@
 @import "@fortawesome/fontawesome-free/css/all.css";
 
 /*  BODY is width 75%
-    ELEMENTS within are 95%
+    ELEMENTS within are 90%
  */
 
 * {
@@ -31,15 +31,15 @@ h1 {
     margin-top: 2rem; /* SPACE NEEDED TO APPEAR UNDER THE HEADER */
     color: #2d3748;
     font-family: sans-serif;
+    text-align: center;
 }
 
 h2 {
     color: #2d3748;
 }
 
-hr {
-    margin-left: 4rem;
-    margin-right: 4rem;
+h4 {
+    margin:0;
 }
 
 li {
@@ -79,11 +79,6 @@ header {
     color: yellow;
     display: none;
 }
-
-.logo img {
-    width: 200px;
-}
-
 
 /* HEADER NAVIGATION BAR */
 .navbar {
@@ -411,73 +406,85 @@ footer {
     }
 }
 
-/* AANBIEDINGEN */
-/* ACTIE */
-.actie {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2em;
+/* AANBIEDINGSACTIE */
+.aanbiedingsactie {
+    color: #2d3748;
+    padding: 0;
+    font-size: 16px;
     border-radius: 5px;
-    background-color: white;
-    width: 90%;
     margin-bottom: 1rem;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgba(0, 0, 0, 0.2);
+    width: 90%;
+    height: 24rem;
+    position: relative; /* Set the container as a relative position */
 }
 
-.actie h2 {
-    margin: 0;
+.aanbiedingsactie a {
+    color: #2d3748;
 }
 
-.actie-text {
-    padding-bottom: 1em;
-}
-
-/* AANBIEDINGEN GRID */
-.grid-aanbiedingen-1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    padding: 1em;
-    width: 100%;
-    gap: 1rem;
-}
-
-.grid-aanbiedingen-1 a:hover {
-    text-decoration: none;
-}
-
-/* AANBIEDINGEN GRID ITEM 1*/
-.grid-item-aanbiedingen-1{
-    background-color: #eee;
-    border-radius: 5px;
-    text-align: center;
-    color: #edf2f7;
-    width: 18rem;
-    height: 18rem;
-    padding: 1rem 0.2rem 5em;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    /*margin-bottom: 1rem;*/
-}
-
-.grid-item-aanbiedingen-1:hover {
-    background-color: #cccccc;
-}
-
-.grid-item-aanbiedingen-1 img {
+.aanbiedingsactie img{
     width: 100%; /* Occupy the full width of the container */
-    height: 100%; /* Occupy the full height of the container */
+    height: 24rem; /* Occupy the full height of the container */
     object-fit: cover; /* Fit the image while preserving aspect ratio */
     object-position: center; /* Center the image within the container */
 }
 
-.grid-item-aanbiedingen-1 img:hover {
-    opacity: 0.8;
-    transform: scale(1.01);
+.text-overlay-actie {
+    position: absolute; /* Set the text overlay as an absolute position */
+    top: 0; /* Position the overlay at the top */
+    left: 0; /* Position the overlay at the left */
+    width: 100%; /* Occupy the full width of the container */
+    height: 100%; /* Occupy the full height of the container */
+    display: flex; /* Use flexbox to center the text vertically and horizontally */
+    flex-direction: column; /* Arrange the text in a column */
+    justify-content: center; /* Center the text vertically */
+    align-items: center; /* Center the text horizontally */
+}
+
+.text-overlay-actie h2,
+.text-overlay-actie h3,
+.text-overlay-actie a {
+    margin: 0; /* Remove any default margin */
+}
+
+/* WILLEKEURIGE AANBIEDINGEN */
+/* THIS COVERS THE COMPLETE ELEMENT */
+.grid-actie-parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 5px;
+    width: 90%;
+    margin-bottom: 1rem;
+    justify-items: center;
+}
+
+/* THIS COVERS THE BOX ELEMENT */
+.grid-actie {
+    background-color: rgba(255,255,255,0.1);
+    display: flex;
+    width: 26rem;
+    height: 14rem;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.grid-actie-left {
+    width: 66%;
+    color: black;
+    float: left;
+}
+
+.grid-actie-right {
+    width: 33%;
+    float: right;
+    color: black;
+}
+
+.grid-actie-right img {
+    max-width: 100%;
 }
 
 /* RESPONSIVE GRID-AANBIEDINGEN */
@@ -501,60 +508,6 @@ footer {
     }
 }
 
-/* AANBIEDINGSACTIE */
-.aanbiedingsactie {
-    color: #2d3748;
-    padding: 0;
-    font-size: 16px;
-    border-radius: 5px;
-    margin-bottom: 1rem;
-    width: 90%;
-    position: relative; /* Set the container as a relative position */
-}
-
-.aanbiedingsactie a {
-    color: #2d3748;
-}
-
-.aanbiedingsactie a:hover {
-    /*color: dodgerblue;*/
-}
-
-.aanbiedingsactie img{
-    width: 100%; /* Occupy the full width of the container */
-    height: 100%; /* Occupy the full height of the container */
-    object-fit: cover; /* Fit the image while preserving aspect ratio */
-    object-position: center; /* Center the image within the container */
-}
-
-.aanbiedingsactie-item h2 {
-    margin: 0;
-    padding: 0;
-}
-
-.aanbiedingsactie-item h3 {
-    margin: 0;
-    padding: 0;
-}
-
-.text-overlay-actie {
-    position: absolute; /* Set the text overlay as an absolute position */
-    top: 0; /* Position the overlay at the top */
-    left: 0; /* Position the overlay at the left */
-    width: 100%; /* Occupy the full width of the container */
-    height: 100%; /* Occupy the full height of the container */
-    display: flex; /* Use flexbox to center the text vertically and horizontally */
-    flex-direction: column; /* Arrange the text in a column */
-    justify-content: center; /* Center the text vertically */
-    align-items: center; /* Center the text horizontally */
-}
-
-.text-overlay-actie h2,
-.text-overlay-actie h3,
-.text-overlay-actie a {
-    margin: 0; /* Remove any default margin */
-}
-
 /* NIEUWS */
 .nieuws {
     color: #2d3748;
@@ -562,6 +515,7 @@ footer {
     font-size: 16px;
     border-radius: 5px;
     margin-bottom: 1rem;
+    height: 24rem;
     width: 90%;
     position: relative; /* Set the container as a relative position */
 
@@ -571,25 +525,11 @@ footer {
     color: #2d3748;
 }
 
-.nieuws a:hover {
-    /*color: dodgerblue;*/
-}
-
 .nieuws img{
     width: 100%; /* Occupy the full width of the container */
-    height: 100%; /* Occupy the full height of the container */
+    height: 24rem; /* Occupy the full height of the container */
     object-fit: cover; /* Fit the image while preserving aspect ratio */
     object-position: center; /* Center the image within the container */
-}
-
-.nieuws-item h2 {
-    margin: 0;
-    padding: 0;
-}
-
-.nieuws-item h3 {
-    margin: 0;
-    padding: 0;
 }
 
 .text-overlay-nieuws {
