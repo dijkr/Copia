@@ -220,7 +220,7 @@ footer {
     font-family: sans-serif;
     font-size: 16px;
     padding-bottom: 1rem;
-    box-shadow: 1px -1px 2px #888888;
+    /*box-shadow: 1px -1px 2px #888888;*/
 }
 
 /* FOOTER GRID */
@@ -501,34 +501,111 @@ footer {
     }
 }
 
-/* FULLPAGE ITEM */
-.fullpage {
+/* AANBIEDINGSACTIE */
+.aanbiedingsactie {
     color: #2d3748;
-    background-color: white;
-    padding: 2em;
+    padding: 0;
     font-size: 16px;
     border-radius: 5px;
     margin-bottom: 1rem;
     width: 90%;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgba(0, 0, 0, 0.2);
+    position: relative; /* Set the container as a relative position */
 }
 
-.fullpage a {
+.aanbiedingsactie a {
     color: #2d3748;
 }
 
-.fullpage a:hover {
+.aanbiedingsactie a:hover {
     /*color: dodgerblue;*/
 }
 
-.item h2 {
+.aanbiedingsactie img{
+    width: 100%; /* Occupy the full width of the container */
+    height: 100%; /* Occupy the full height of the container */
+    object-fit: cover; /* Fit the image while preserving aspect ratio */
+    object-position: center; /* Center the image within the container */
+}
+
+.aanbiedingsactie-item h2 {
     margin: 0;
     padding: 0;
 }
 
-.item h3 {
+.aanbiedingsactie-item h3 {
     margin: 0;
     padding: 0;
+}
+
+.text-overlay-actie {
+    position: absolute; /* Set the text overlay as an absolute position */
+    top: 0; /* Position the overlay at the top */
+    left: 0; /* Position the overlay at the left */
+    width: 100%; /* Occupy the full width of the container */
+    height: 100%; /* Occupy the full height of the container */
+    display: flex; /* Use flexbox to center the text vertically and horizontally */
+    flex-direction: column; /* Arrange the text in a column */
+    justify-content: center; /* Center the text vertically */
+    align-items: center; /* Center the text horizontally */
+}
+
+.text-overlay-actie h2,
+.text-overlay-actie h3,
+.text-overlay-actie a {
+    margin: 0; /* Remove any default margin */
+}
+
+/* NIEUWS */
+.nieuws {
+    color: #2d3748;
+    padding: 0;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: 90%;
+    position: relative; /* Set the container as a relative position */
+
+}
+
+.nieuws a {
+    color: #2d3748;
+}
+
+.nieuws a:hover {
+    /*color: dodgerblue;*/
+}
+
+.nieuws img{
+    width: 100%; /* Occupy the full width of the container */
+    height: 100%; /* Occupy the full height of the container */
+    object-fit: cover; /* Fit the image while preserving aspect ratio */
+    object-position: center; /* Center the image within the container */
+}
+
+.nieuws-item h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.nieuws-item h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.text-overlay-nieuws {
+    position: absolute; /* Set the text overlay as an absolute position */
+    top: 0; /* Position the overlay at the top */
+    left: 0; /* Position the overlay at the left */
+    width: 100%; /* Occupy the full width of the container */
+    height: 100%; /* Occupy the full height of the container */
+    display: flex; /* Use flexbox to center the text vertically and horizontally */
+    flex-direction: column; /* Arrange the text in a column */
+    justify-content: center; /* Center the text vertically */
+    align-items: center; /* Center the text horizontally */
+}
+
+.text-overlay-nieuws  h2,
+.text-overlay-nieuws  h3,
+.text-overlay-nieuws  a {
+    margin: 0; /* Remove any default margin */
 }

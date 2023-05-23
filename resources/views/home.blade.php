@@ -8,14 +8,17 @@
 
 @section('content')
     <div class="content">
-        <h1 id="title">Welkom bij COPIA</h1>
+        <h1 id="title">Welkom bij Commodum Copia</h1>
     </div>
 
-    <div class="fullpage">
-        <div class="item">
+    <div class="aanbiedingsactie">
+        <div class="aanbiedingsactie-item">
+            <img src="{{Vite::asset('resources/backend/assets/img/banners/banner_green.png')}}">
+            <div class="text-overlay-actie">
             <h2>Aanbiedingsactie</h2>
             <h3>subkop aanbiedingsactie</h3>
             <a href="#">Aanbieding</a>
+            </div>
         </div>
     </div>
 
@@ -30,7 +33,7 @@
     <a href="#">
         <div class="grid-item-aanbiedingen-1">
             <img src="{{Vite::asset('resources/backend/assets/img/bananen.png')}}">
-            <div class="overlay-text-products">Chicuita banenen 5 stuks</div>
+            <div class="overlay-text-products">Chiquita banenen 5 stuks</div>
         </div>
     </a>
 
@@ -58,11 +61,14 @@
     </div>
 </div>
 
-    <div class="fullpage">
-        <div class="item">
+    <div class="nieuws">
+        <div class="nieuws-item">
+            <img src="{{Vite::asset('resources/backend/assets/img/banners/banner_green.png')}}">
+            <div class="text-overlay-nieuws">
             <h2>Nieuwbericht</h2>
             <h3>Korte tekst nieuwsbericht</h3>
             <a href="#">Aanbieding</a>
+        </div>
         </div>
     </div>
 
