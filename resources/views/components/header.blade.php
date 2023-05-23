@@ -18,7 +18,7 @@
         <label for="menu-toggle" class="fa-solid fa-bars" style="color: #ffffff"></label>
         <ul class="menu-items">
             <li><a href="/">Home</a></li>
-            <li><a href="/producten">Producten</a></li>
+            <li><a href="/categorien">Producten</a></li>
             <li><a href="/aanbiedingen">Aanbiedingen</a></li>
             <li><a href="/winkelwagen">Winkelwagen</a></li>
             <li><a href="/bestellen">Bestellen</a></li>

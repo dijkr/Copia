@@ -17,8 +17,8 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/producten', function () {
-    return view('producten');
+Route::get('/categorien', function () {
+    return view('categorien');
 });
 
 Route::get('/aanbiedingen', function () {
@@ -37,7 +37,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
-Route::get('/productcategorie/($id)', function () {
-    return view('productcategorie');
+Route::get('/groenten', function () {
+    return view('producten');
 });
 

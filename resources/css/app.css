@@ -282,18 +282,131 @@ footer {
     }
 }
 
-/* PRODUCTS GRID */
+/* CATEGORY GRID */
+.grid-cat-1 {
+    display: grid;
+    justify-items: center;
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.grid-cat-1 a:hover {
+    color: #edf2f7;
+    text-decoration: none;
+}
+
+.grid-item-cat-1 {
+    background-color: rgba(255,255,255,0.1);
+    padding: 1rem 1rem 4em;
+    text-align: center;
+    color: #edf2f7;
+    align-items: center; /* Center vertically */
+    width: 14rem;
+    height: 14rem;
+    position: relative;
+    overflow: hidden;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.grid-item-cat-1 img {
+    width: 100%; /* Occupy the full width of the container */
+    height: 100%; /* Occupy the full height of the container */
+    object-fit: cover; /* Fit the image while preserving aspect ratio */
+    object-position: center; /* Center the image within the container */
+}
+
+.grid-item-cat-1 img:hover {
+    opacity: 0.8;
+    transform: scale(1.03);
+}
+
+.overlay-text-cat {
+    position: absolute; /* Position the text element */
+    top: 83%; /* Adjust the vertical position as needed */
+    left: 50%; /* Adjust the horizontal position as needed */
+    transform: translate(-50%, -50%); /* Center the text */
+    color: #2d3748;
+    font-size: 1.0rem;
+    z-index: 2; /* Ensure the text appears above the image */
+    text-align: center;
+    pointer-events: none; /* Allow clicks to go through the text */
+}
+
+.grid-item-cat-1:hover {
+    background-color: #eee;
+}
+
+/* RESPONSIVE GRID-CATEGORY */
+@media screen and (min-width: 1291px) {
+    .grid-cat-1 {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 1290px) {
+    .grid-cat-1 {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .grid-cat-1 {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .grid-cat-1 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .grid-item-cat-1 {
+        width: 14rem;
+        height: 14rem;
+
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .grid-products-1 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .grid-item-cat-1 {
+        width: 16rem;
+        height: 16rem;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-cat-1 {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .grid-item-cat-1 {
+        width: 18rem;
+        height: 18rem;
+
+    }
+}
+
+/* PRODUCTEN */
 .grid-products-1 {
     display: grid;
     justify-items: center;
     padding: 1em;
-    background-color: white;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgba(0, 0, 0, 0.2);
     margin-bottom: 1rem;
-    /*overflow: scroll;*/
 }
 
 .grid-products-1 a:hover {
@@ -302,11 +415,10 @@ footer {
 }
 
 .grid-item-products-1 {
-    background-color: #eee;
+    background-color: rgba(255,255,255,0.1);
     padding: 1rem 1rem 4em;
-    border-radius: 5px;
     text-align: center;
-    color: #edf2f7;
+    color: #2d3748;
     display: flex; /* Display as flex container */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
@@ -314,7 +426,10 @@ footer {
     height: 14rem;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
 }
 
 .grid-item-products-1 img {
@@ -329,7 +444,7 @@ footer {
     transform: scale(1.03);
 }
 
-.overlay-text-products {
+.grid-item-products-1 .bottom {
     position: absolute; /* Position the text element */
     top: 83%; /* Adjust the vertical position as needed */
     left: 50%; /* Adjust the horizontal position as needed */
@@ -342,7 +457,7 @@ footer {
 }
 
 .grid-item-products-1:hover {
-    background-color: #cccccc;
+    background-color: #eee;
 }
 
 /* RESPONSIVE GRID-PRODUCTS */
@@ -406,6 +521,7 @@ footer {
     }
 }
 
+
 /* AANBIEDINGSACTIE */
 .aanbiedingsactie {
     color: #2d3748;
@@ -437,8 +553,8 @@ footer {
     height: 100%; /* Occupy the full height of the container */
     display: flex; /* Use flexbox to center the text vertically and horizontally */
     flex-direction: column; /* Arrange the text in a column */
-    justify-content: center; /* Center the text vertically */
-    align-items: center; /* Center the text horizontally */
+    justify-content: end;
+    margin-left: 1rem;
 }
 
 .text-overlay-actie h2,
@@ -451,8 +567,9 @@ footer {
 /* THIS COVERS THE COMPLETE ELEMENT */
 .grid-actie-parent {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-radius: 5px;
     width: 90%;
     margin-bottom: 1rem;
@@ -472,15 +589,18 @@ footer {
 }
 
 .grid-actie-left {
-    width: 66%;
+    width: 60%;
     color: black;
     float: left;
+    margin-top: 15%;
+    margin-left: 1rem;
 }
 
 .grid-actie-right {
-    width: 33%;
+    width: 35%;
     float: right;
     color: black;
+    margin-top: 5%;
 }
 
 .grid-actie-right img {
@@ -540,8 +660,7 @@ footer {
     height: 100%; /* Occupy the full height of the container */
     display: flex; /* Use flexbox to center the text vertically and horizontally */
     flex-direction: column; /* Arrange the text in a column */
-    justify-content: center; /* Center the text vertically */
-    align-items: center; /* Center the text horizontally */
+    margin-left: 1rem;
 }
 
 .text-overlay-nieuws  h2,
