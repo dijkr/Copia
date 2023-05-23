@@ -7,10 +7,6 @@
 @extends('components.layout')
 
 @section('content')
-    <div class="content">
-        <h1 id="title">Welkom bij Commodum Copia</h1>
-    </div>
-
     <div class="aanbiedingsactie">
         <div class="aanbiedingsactie-item">
             <img src="{{Vite::asset('resources/backend/assets/img/banners/banner_food.jpeg')}}">

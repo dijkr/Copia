@@ -403,10 +403,11 @@ footer {
 
 /* PRODUCTEN */
 .grid-products-1 {
-    display: grid;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
     padding: 1em;
     margin-bottom: 1rem;
+    width: 90%;
 }
 
 .grid-products-1 a:hover {
@@ -528,6 +529,7 @@ footer {
     padding: 0;
     font-size: 16px;
     border-radius: 5px;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     width: 90%;
     height: 24rem;
