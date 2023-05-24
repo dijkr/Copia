@@ -1,10 +1,10 @@
 @extends('components.layout')
 
 @section('content')
-    <div class="aanbiedingsactie">
-        <div class="aanbiedingsactie-item">
+    <div class="productbanner">
+        <div class="productbanner-item">
             <img src="{{Vite::asset('resources/backend/assets/img/banners/tomaten.png')}}">
-            <div class="text-overlay-actie">
+            <div class="productbanner-text">
                 <h1>GROENTEN</h1>
             </div>
         </div>

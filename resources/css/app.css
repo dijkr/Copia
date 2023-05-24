@@ -218,7 +218,7 @@ footer {
     /*box-shadow: 1px -1px 2px #888888;*/
 }
 
-/* FOOTER GRID */
+/* FOOTER-ITEMS */
 .grid-footer-1 {
     display: flex;
     flex-wrap: wrap;
@@ -233,7 +233,7 @@ footer {
     border-radius: 5px;
 }
 
-/* LINKS */
+/* FOOTER-LINKS */
 .grid-footer-2 {
     display: flex;
     flex-wrap: wrap;
@@ -247,7 +247,7 @@ footer {
     color: black;
 }
 
-/* ICONS */
+/* FOOTER-ICONS */
 .grid-footer-3 {
     display: flex;
     width: 100%;
@@ -264,7 +264,7 @@ footer {
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
-/* COPYRIGHT */
+/* FOOTER-COPYRIGHT */
 .copyright {
     display: flex;
     bottom: 0;
@@ -282,7 +282,7 @@ footer {
     }
 }
 
-/* AANBIEDINGSACTIE */
+/* ACTIE */
 .aanbiedingsactie {
     color: #2d3748;
     padding: 0;
@@ -324,7 +324,7 @@ footer {
     margin: 0; /* Remove any default margin */
 }
 
-/* WILLEKEURIGE AANBIEDINGEN */
+/* AANBIEDINGEN */
 /* THIS COVERS THE COMPLETE ELEMENT */
 .grid-actie-parent {
     display: flex;
@@ -368,7 +368,7 @@ footer {
     max-width: 100%;
 }
 
-/* RESPONSIVE GRID-AANBIEDINGEN */
+/* AANBIEDINGEN RESPONSIVE*/
 @media screen and (min-width: 1291px) {
     .grid-aanbiedingen-1 {
         grid-template-columns: repeat(4, 1fr);
@@ -430,7 +430,7 @@ footer {
     margin: 0; /* Remove any default margin */
 }
 
-/* CATEGORY GRID */
+/* CATEGORY */
 .grid-cat-1 {
     display: grid;
     justify-items: center;
@@ -488,7 +488,7 @@ footer {
     background-color: #eee;
 }
 
-/* RESPONSIVE GRID-CATEGORY */
+/* CATEGORY RESPONSIVE */
 @media screen and (min-width: 1291px) {
     .grid-cat-1 {
         grid-template-columns: repeat(6, 1fr);
@@ -550,6 +550,7 @@ footer {
 }
 
 /* PRODUCTS-OVERVIEW */
+/* CSS de banner zie /* PRODUCT */
 .grid-products-1 {
     display: flex;
     flex-wrap: wrap;
@@ -609,7 +610,7 @@ footer {
     background-color: #eee;
 }
 
-/* RESPONSIVE PRODUCTS-OVERVIEW */
+/* PRODUCTS-OVERVIEW RESPONSIVE */
 @media screen and (min-width: 1291px) {
     .grid-products-1 {
         grid-template-columns: repeat(6, 1fr);
@@ -671,6 +672,47 @@ footer {
 }
 
 /* PRODUCT */
+.productbanner {
+    color: #2d3748;
+    padding: 0;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 90%;
+    height: 24rem;
+    position: relative; /* Set the container as a relative position */
+}
+
+.productbanner a {
+    color: #2d3748;
+}
+
+.productbanner img{
+    width: 100%; /* Occupy the full width of the container */
+    height: 24rem; /* Occupy the full height of the container */
+    object-fit: cover; /* Fit the image while preserving aspect ratio */
+    object-position: center; /* Center the image within the container */
+}
+
+.productbanner-text {
+    position: absolute; /* Set the text overlay as an absolute position */
+    top: 0; /* Position the overlay at the top */
+    left: 0; /* Position the overlay at the left */
+    width: 100%; /* Occupy the full width of the container */
+    height: 100%; /* Occupy the full height of the container */
+    display: flex; /* Use flexbox to center the text vertically and horizontally */
+    flex-direction: column; /* Arrange the text in a column */
+    justify-content: end;
+    margin-left: 1rem;
+}
+
+.productbanner-text h2,
+.productbanner-text h3,
+.productbanner-text a {
+    margin: 0; /* Remove any default margin */
+}
+
 .grid-product-1 {
     display: flex;
     flex-wrap: wrap;
