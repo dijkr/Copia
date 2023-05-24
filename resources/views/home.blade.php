@@ -43,7 +43,7 @@
             </div>
 
             <div class="grid-actie-right">
-                <img src="{{Vite::asset('resources/backend/assets/img/chocola.png')}}">
+                <img src="{{Vite::asset('resources/backend/assets/img/brood.png')}}">
                 3.00 EUR
             </div>
         </a>

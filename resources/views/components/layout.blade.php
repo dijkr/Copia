@@ -3,7 +3,7 @@
 <html>
 <head>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <title>@yield('title')</title>
+    <title>Copia</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
