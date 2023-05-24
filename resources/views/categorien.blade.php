@@ -59,7 +59,7 @@
 
         <a href="#">
             <div class="grid-item-cat-1">
-                <img src="{{Vite::asset('resources/backend/assets/img/tandpasta.png')}}">
+                <img src="{{Vite::asset('resources/backend/assets/img/axe.png')}}">
                 <div class="overlay-text-cat">Drogisterij</div>
             </div></a>
 

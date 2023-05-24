@@ -18,7 +18,7 @@
             </div>
         </div>
 
-        <a href="#">
+        <a href="/broccoli">
             <div class="grid-item-products-1">
                 <div clas="top">
                     <img src="{{Vite::asset('resources/backend/assets/img/broccoli.png')}}">

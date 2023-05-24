@@ -41,3 +41,6 @@ Route::get('/groenten', function () {
     return view('producten');
 });
 
+Route::get('/broccoli', function () {
+    return view('product');
+});
