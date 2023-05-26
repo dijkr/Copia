@@ -17,12 +17,15 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('address')->unique();
             $table->timestamp('email_verified_at')->nullable();
+            $table->string('code')->unique();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
-            $table->boolean('is_admin');
-            $table->boolean('is_editor);
+            $table->boolean('is_customer')->default('1');
+            $table->boolean('is_admin')->default('0');
+            $table->boolean('is_editor')->default('0');
         });
     }
 

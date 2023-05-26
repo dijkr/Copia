@@ -20,7 +20,7 @@ body {
     align-items: center;
 }
 
-/* RESPONSIVE BODY */
+/* BODY RESPONSIVE */
 @media screen and (min-width: 950px) {
     body {
         width: 75%;
@@ -38,6 +38,10 @@ h2 {
     color: #2d3748;
 }
 
+h3 {
+    margin:0;
+}
+
 h4 {
     margin:0;
 }
@@ -48,7 +52,7 @@ li {
 
 a {
     text-decoration: none;
-    color: #edf2f7;
+    color: #2d3748;
 }
 
 a:hover {
@@ -210,12 +214,16 @@ header.background {
 /* FOOTER */
 footer {
     background-color: rgba(104,172,72,1.0);
+    color: black;
     width: 100vw;
     margin-top: auto;
     font-family: sans-serif;
     font-size: 16px;
     padding-bottom: 1rem;
-    /*box-shadow: 1px -1px 2px #888888;*/
+}
+
+footer a {
+    color: black;
 }
 
 /* FOOTER-ITEMS */
@@ -227,24 +235,15 @@ footer {
     justify-content: space-evenly;
 }
 
+.grid-footer-1 i {
+    padding-top: 1.5rem;
+}
+
 .grid-item-footer-1 {
     color: white;
-    padding: 1em;
+    padding-top: 2em;
+    padding-bottom: 1em;
     border-radius: 5px;
-}
-
-/* FOOTER-LINKS */
-.grid-footer-2 {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding: 2rem;
-}
-
-.grid-footer-2 a {
-    color: black;
 }
 
 /* FOOTER-ICONS */
@@ -262,6 +261,16 @@ footer {
 
 .grid-item-footer-3 {
     margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+/* FOOTER-LINKS */
+.grid-footer-2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
 }
 
 /* FOOTER-COPYRIGHT */
@@ -672,6 +681,7 @@ footer {
 }
 
 /* PRODUCT */
+/* PRODUCT-BANNER */
 .productbanner {
     color: #2d3748;
     padding: 0;
@@ -713,61 +723,67 @@ footer {
     margin: 0; /* Remove any default margin */
 }
 
-.grid-product-1 {
+/* PRODUCT-BOX */
+.product-parent {
+    padding: 1em;
+    width: 100%;
+}
+
+.product-box {
+    height: 20rem;
+    margin-bottom: 1rem;
+    padding-left: 30%;
+    padding-right: 30%;
+    background-color: rgba(255,255,255,0.1);
+    color: #2d3748;
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-    padding: 1em;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+    gap: 2rem;
+}
+
+.product-box .left,
+.product-box .middle,
+.product-box .right {
+    flex: 1;
+}
+
+.product-box .left {
+    margin-right: 2rem;
+}
+
+.product-box .middle {
+}
+
+.product-box .right {
+}
+
+.product-box img {
+    width: 200px; /* Occupy the full width of the container */
+    height: 200px; /* Occupy the full height of the container */
+
+}
+
+.product-box img:hover {
+    opacity: 0.8;
+    transform: scale(1.03);
+}
+.product-box-omschrijving {
+    height: 20rem;
     margin-bottom: 1rem;
-    width: 90%;
-}
-
-.grid-product-1 a:hover {
-    color: #edf2f7;
-    text-decoration: none;
-}
-
-.grid-item-product-1 {
     background-color: rgba(255,255,255,0.1);
-    padding: 1rem 1rem 4em;
-    text-align: center;
     color: #2d3748;
-    display: flex; /* Display as flex container */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    width: 14rem;
-    height: 14rem;
-    position: relative;
-    overflow: hidden;
     border-style: solid;
     border-radius: 5px;
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0.1);
 }
 
-.grid-item-product-1 img {
-    width: 100%; /* Occupy the full width of the container */
-    height: 100%; /* Occupy the full height of the container */
-    object-fit: cover; /* Fit the image while preserving aspect ratio */
-    object-position: center; /* Center the image within the container */
-}
-
-.grid-item-product-1 img:hover {
-    opacity: 0.8;
-    transform: scale(1.03);
-}
-
-.grid-item-product-1 .bottom {
-    position: absolute; /* Position the text element */
-    top: 83%; /* Adjust the vertical position as needed */
-    left: 50%; /* Adjust the horizontal position as needed */
-    transform: translate(-50%, -50%); /* Center the text */
-    color: #2d3748;
-    font-size: 1.0rem;
-    z-index: 2; /* Ensure the text appears above the image */
-    text-align: center;
-    pointer-events: none; /* Allow clicks to go through the text */
-}
-
-.grid-item-product-1:hover {
-    background-color: #eee;
+.product-box-omschrijving .cat {
 }

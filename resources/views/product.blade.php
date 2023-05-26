@@ -1,34 +1,44 @@
 @extends('components.layout')
 
 @section('content')
-    <div class="aanbiedingsactie">
-        <div class="aanbiedingsactie-item">
+    <div class="productbanner">
+        <div class="productbanner-item">
             <img src="{{Vite::asset('resources/backend/assets/img/banners/tomaten.png')}}">
-            <div class="text-overlay-actie">
+            <div class="productbanner-text">
                 <h1>GROENTEN</h1>
             </div>
         </div>
     </div>
 
-    <div class="grid-product-1">
+    {{-- PARENT --}}
+    <div class="product-parent">
 
-        {{-- PRODUCT --}}
-        <div class="grid-item-product-1">
-            <div clas="top">
+        {{-- BOX --}}
+        <div class="product-box">
+            <div class="left">
                 <img src="{{Vite::asset('resources/backend/assets/img/broccoli.png')}}">
-                1.50
             </div>
 
-            <div class="bottom">
-                Product
-                Korte omschrijving
+            <div class="middle">
+                <h3>Product</h3>
+                <p>1.50 EUR</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="right">
+                <a href="#">Voeg toe</a>
             </div>
         </div>
 
+        {{-- PRODUCTOMSCHRIJVING-KOP --}}
+        <div class="titel">
+            <h4>Productomschrijving</h4>
+        </div>
+
         {{-- PRODUCTOMSCHRIJVING --}}
-        <div class="grid-item-product-1">
-            <div clas="cat">
-                <h4>Subcategorie</h4>
+        <div class="product-box-omschrijving">
+            <div class="cat">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet architecto aspernatur doloremque dolores excepturi illo in iure modi, natus non nostrum odit perferendis perspiciatis placeat, suscipit temporibus. Maxime, voluptate?
             </div>
         </div>
 

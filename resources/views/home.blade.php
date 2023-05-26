@@ -25,7 +25,7 @@
         <a href="#">
             <div class="grid-actie-left">
                 <h4>Aanbiedingsproduct</h4>
-                Korte omschrijving
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </div>
 
             <div class="grid-actie-right">
@@ -39,7 +39,7 @@
         <a href="#">
             <div class="grid-actie-left">
                 <h4>Aanbiedingsproduct</h4>
-                Korte omschrijving
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </div>
 
             <div class="grid-actie-right">
@@ -53,7 +53,7 @@
         <a href="#">
             <div class="grid-actie-left">
                 <h4>Aanbiedingsproduct</h4>
-                Korte omschrijving
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 </div>
 
             <div class="grid-actie-right">
@@ -70,7 +70,7 @@
             <img src="{{Vite::asset('resources/backend/assets/img/banners/banner_meal.png')}}">
         <div class="text-overlay-nieuws">
             <h2>Nieuwbericht</h2>
-            <h3>Korte tekst nieuwsbericht</h3>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet animi architecto debitis dicta dolore earum, expedita fugit modi nam quasi quia quibusdam ratione reiciendis sint sit tempore velit, voluptate?</h3>
             <a href="#">Volledige tekst</a>
         </div>
         </div>

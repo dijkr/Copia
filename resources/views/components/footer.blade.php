@@ -23,7 +23,7 @@
         {{-- LINKS --}}
     <div class="grid-footer-2">
 {{--        <div class="grid-item-footer-2">--}}
-        <a href="#" style="color: #1a202c">Algemene voorwaarden</a>
+        <a href="#">Algemene voorwaarden</a>
         <a href="#">Levering & verzending</a>
         <a href="#">Privacybeleid</a>
         <a href="#">Onze organisatie</a>
