@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('Fulldescription');
             $table->string('Image');
             $table->string('Weight');
-            $table->integer('Price');
+            $table->float('Price');
             $table->string('Category');
             $table->string('Subcategory');
             $table->string('Subsubcategory');
