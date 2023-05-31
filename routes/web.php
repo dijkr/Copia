@@ -28,9 +28,6 @@ Route::get('categorien', function () {
     ]);
 });
 
-/* PRODUCTS - ALL PRODUCTS FROM ONE CATEGORY, SORTED PER SUBCATEGORY */
-Route::get('/{category:slug}', [ProductController::class, 'showCategory']);
-
 /* PRODUCT - ONE PRODUCT */
 Route::get('/broccoli', function () {
     return view('product');
@@ -51,3 +48,6 @@ Route::get('/bestellen', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
+
+/* PRODUCTS - ALL PRODUCTS FROM ONE CATEGORY, SORTED PER SUBCATEGORY */
+Route::get('/{category:slug}', [ProductController::class, 'showCategory']);

@@ -717,6 +717,10 @@ footer a {
     margin-left: 1rem;
 }
 
+.productbanner-text h1 {
+    color: white;
+}
+
 .productbanner-text h2,
 .productbanner-text h3,
 .productbanner-text a {

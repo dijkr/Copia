@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('slug');
             $table->string('name');
             $table->string('image');
+            $table->string('banner');
         });
     }
 
