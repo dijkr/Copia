@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Category;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,8 +18,10 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/categorien', function () {
-    return view('categorien');
+Route::get('categorien', function () {
+    return view('categorien', [
+        'categories' => Category::all()
+    ]);
 });
 
 Route::get('/aanbiedingen', function () {
