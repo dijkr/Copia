@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('EAN');
+            $table->string('slug');
             $table->string('Title');
             $table->string('Brand');
             $table->string('Shortdescription');

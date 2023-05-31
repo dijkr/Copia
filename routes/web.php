@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Category;
+use App\Models\Product;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,10 +41,18 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
-Route::get('/groenten', function () {
-    return view('producten');
+Route::get('/{category:slug}', function (Category $slug) {
+    return view('producten', [
+        'products' => Product::all()
+    ]);
 });
 
 Route::get('/broccoli', function () {
     return view('product');
 });
+
+//Route::get('/{product:slug}', function (Product $product) {
+//    return view('product', [
+//        'product' => $product
+//    ]);
+//});
