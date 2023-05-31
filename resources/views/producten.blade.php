@@ -1,11 +1,12 @@
 @extends('components.layout')
 
 @section('content')
+
     <div class="productbanner">
         <div class="productbanner-item">
             <img src="{{Vite::asset('resources/backend/assets/img/banners/tomaten.png')}}">
             <div class="productbanner-text">
-                <h1>GROENTEN</h1>
+                <h1> {{ $category->name }} </h1>
             </div>
         </div>
     </div>

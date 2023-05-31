@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Models\Category;
 use App\Models\Product;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,20 +29,7 @@ Route::get('categorien', function () {
 });
 
 /* PRODUCTS - ALL PRODUCTS FROM ONE CATEGORY, SORTED PER SUBCATEGORY */
-//Route::get('/{category:slug}', function (Category $slug) {
-//    return view('producten', [
-//        'products' => Product::where('Category', 'groenten')
-//    ]);
-//});
-
-Route::get('/{category:slug}', function (Category $category) {
-    $products = Product::where('category', 'groenten')->get();
-
-    return view('producten', [
-        'products' => $products
-    ]);
-});
-
+Route::get('/{category:slug}', [ProductController::class, 'showCategory']);
 
 /* PRODUCT - ONE PRODUCT */
 Route::get('/broccoli', function () {

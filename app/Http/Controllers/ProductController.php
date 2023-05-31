@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -81,5 +82,19 @@ class ProductController extends Controller
     public function destroy(Product $product)
     {
         //
+    }
+
+    /* PRODUCTS - ALL PRODUCTS FROM ONE CATEGORY, SORTED PER SUBCATEGORY */
+    public function showCategory (Request $request) {
+//        dd($request);
+        $category = $request->getRequestUri();
+        $category = trim($category, '/');
+        $products = Product::where('category', $category)->get();
+        $categoryData = Category::where('slug', $category)->first();
+//        dd($categoryData);
+        return view('producten', [
+            'products' => $products,
+            'category' => $categoryData
+        ]);
     }
 }
