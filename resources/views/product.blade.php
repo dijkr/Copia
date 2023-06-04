@@ -5,7 +5,7 @@
         <div class="productbanner-item">
             <img src="{{ '/images/banners/' . $category->banner }}">
             <div class="productbanner-text">
-                <h1><h1> {{ $category->name }} </h1></h1>
+                <h1> {{ $category->name }} </h1>
             </div>
         </div>
     </div>
@@ -22,7 +22,7 @@
             <div class="middle">
                 <h3> {{ $product->Title }} </h3>
                 {{ '€' . ' ' . number_format($product->Price, 2) }}
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>{{ $product->Shortdescription }}</p>
             </div>
 
             <div class="right">
@@ -38,7 +38,7 @@
         {{-- PRODUCTOMSCHRIJVING --}}
         <div class="product-box-omschrijving">
             <div class="cat">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci amet architecto aspernatur doloremque dolores excepturi illo in iure modi, natus non nostrum odit perferendis perspiciatis placeat, suscipit temporibus. Maxime, voluptate?
+                {{ $product->Fulldescription }}
             </div>
         </div>
 
