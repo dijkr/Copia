@@ -13,13 +13,13 @@
 
     <div class="grid-products-1">
 
-        <div class="grid-item-products-1">
-            <div clas="cat">
-                <h4>Subcategorie</h4>
-            </div>
-        </div>
-
+        {{-- SUBCATEGORY WITH PRODUCTS --}}
         <div class="grid-cat-1">
+            <div class="grid-item-products-1">
+                <div class="cat">
+                    <h4>Subcategorie</h4>
+                </div>
+            </div>
             @foreach($products as $product)
                 <a href="{{ '/product/' . $product->slug }}">
                     <div class="grid-item-products-1">

@@ -5,13 +5,13 @@
 ?>
 
 @extends('components.layout')
-
 @section('content')
+
     <div class="aanbiedingsactie">
         <div class="aanbiedingsactie-item">
             <img src="{{Vite::asset('resources/backend/assets/img/banners/banner_food.jpeg')}}">
             <div class="text-overlay-actie">
-            <h2>Aanbiedingsactie</h2>
+            <h2>Aanbiedingsactie {{ 'week' . " " . $week }}</h2>
             <h3>subkop aanbiedingsactie</h3>
             <a href="#">Aanbieding</a>
             </div>

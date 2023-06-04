@@ -358,6 +358,10 @@ footer a {
     border-color: rgba(0, 0, 0, 0.1);
 }
 
+.grid-actie:hover {
+    background-color: #eee;
+}
+
 .grid-actie-left {
     width: 60%;
     color: black;
@@ -375,6 +379,11 @@ footer a {
 
 .grid-actie-right img {
     max-width: 100%;
+}
+
+.grid-actie-right img:hover {
+    opacity: 0.8;
+    transform: scale(1.03);
 }
 
 /* AANBIEDINGEN RESPONSIVE*/

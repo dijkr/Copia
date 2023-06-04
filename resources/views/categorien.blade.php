@@ -1,5 +1,6 @@
 @extends('components.layout')
 @section('content')
+
     <div class="grid-cat-1">
     @foreach($categories as $category)
             <a href="{{ '/categorie/' . $category->slug }}">
