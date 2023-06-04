@@ -86,14 +86,23 @@ class ProductController extends Controller
 
     /* PRODUCTS - ALL PRODUCTS FROM ONE CATEGORY, SORTED PER SUBCATEGORY */
     public function showCategory (Request $request) {
-//        dd($request);
-        $category = $request->getRequestUri();
-        $category = trim($category, '/');
+        $category = basename($request->getRequestUri());
         $products = Product::where('category', $category)->get();
         $categoryData = Category::where('slug', $category)->first();
-//        dd($categoryData);
         return view('producten', [
             'products' => $products,
+            'category' => $categoryData
+        ]);
+    }
+
+    /* PRODUCT - ONE PRODUCT */
+    public function showProduct (Request $request) {
+        $product = basename($request->getRequestUri());
+        $product = Product::where('slug', $product)->first();
+        $category = $product->Category;
+        $categoryData = Category::where('slug', $category)->first();
+        return view('product', [
+            'product' => $product,
             'category' => $categoryData
         ]);
     }

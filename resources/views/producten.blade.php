@@ -4,7 +4,7 @@
 
     <div class="productbanner">
         <div class="productbanner-item">
-            <img src="{{ 'images/banners/' . $category->banner }}">
+            <img src="{{ '/images/banners/' . $category->banner }}">
             <div class="productbanner-text">
                 <h1> {{ $category->name }} </h1>
             </div>
@@ -21,11 +21,11 @@
 
         <div class="grid-cat-1">
             @foreach($products as $product)
-                <a href="{{ '/' . $product->slug }}">
+                <a href="{{ '/product/' . $product->slug }}">
                     <div class="grid-item-products-1">
                         <div clas="top">
-                            <img src="{{ 'images/' . $product->Image }}">
-                             {{ '€' . ' ' . $product->Price }}
+                            <img src="{{ '/images/' . $product->Image }}">
+                             {{ '€' . ' ' . number_format($product->Price, 2) }}
                         </div>
 
                         <div class="bottom">
