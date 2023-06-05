@@ -14,28 +14,30 @@
     <div class="grid-products-1">
 
         {{-- SUBCATEGORY WITH PRODUCTS --}}
-        <div class="grid-cat-1">
+        @foreach($products as $product)
+        <div class="grid-pd-cat-1">
+
+            {{-- SUBCATEGORY --}}
             <div class="grid-item-products-1">
                 <div class="cat">
-                    <h4>Subcategorie</h4>
+                    <h4> {{ $product->Subcategory }} </h4>
                 </div>
             </div>
-            @foreach($products as $product)
-                <a href="{{ '/product/' . $product->slug }}">
-                    <div class="grid-item-products-1">
-                        <div class="top">
-                            <img src="{{ '/images/' . $product->Image }}">
-                             {{ '€' . ' ' . number_format($product->Price, 2) }}
-                        </div>
-
-                        <div class="bottom">
-                            {{ $product->Title }}
-                            {{ $product->Shortdescription }}
-                        </div>
+             {{-- SUBCATEGORY ITS PRODUCTS --}}
+            <a href="{{ '/product/' . $product->slug }}">
+                <div class="grid-item-products-1">
+                    <div class="top">
+                        <img src="{{ '/images/' . $product->Image }}">
+                         {{ '€' . ' ' . number_format($product->Price, 2) }}
                     </div>
-                </a>
-            @endforeach
+                    <div class="bottom">
+                        {{ $product->Title }}
+                        {{ $product->Shortdescription }}
+                    </div>
+                </div>
+            </a>
         </div>
-    </div>
+        @endforeach
 
+    </div>
 @endsection

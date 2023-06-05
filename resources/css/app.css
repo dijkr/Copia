@@ -454,7 +454,7 @@ footer a {
     justify-items: center;
     padding: 1em;
     border-radius: 5px;
-    margin-bottom: 1rem;
+    /*margin-bottom: 1rem;*/
 }
 
 .grid-cat-1 a:hover {
@@ -542,7 +542,7 @@ footer a {
 }
 
 @media screen and (max-width: 700px) {
-    .grid-products-1 {
+    .grid-cat-1 {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
@@ -573,13 +573,20 @@ footer a {
     display: flex;
     flex-wrap: wrap;
     padding: 1em;
-    margin-bottom: 1rem;
     width: 90%;
 }
 
 .grid-products-1 a:hover {
     color: #edf2f7;
     text-decoration: none;
+}
+
+.grid-pd-cat-1 {
+    display: grid;
+    justify-items: center;
+    padding: 1em;
+    border-radius: 5px;
+    /*margin-bottom: 1rem;*/
 }
 
 .grid-item-products-1 {
@@ -630,28 +637,28 @@ footer a {
 
 /* PRODUCTS-OVERVIEW RESPONSIVE */
 @media screen and (min-width: 1291px) {
-    .grid-products-1 {
+    .grid-pd-cat-1 {
         grid-template-columns: repeat(6, 1fr);
         gap: 1rem;
     }
 }
 
 @media screen and (max-width: 1290px) {
-    .grid-products-1 {
+    .grid-pd-cat-1 {
         grid-template-columns: repeat(5, 1fr);
         gap: 1rem;
     }
 }
 
 @media screen and (max-width: 1100px) {
-    .grid-products-1 {
+    .grid-pd-cat-1 {
         grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
     }
 }
 
 @media screen and (max-width: 880px) {
-    .grid-products-1 {
+    .grid-pd-cat-1 {
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
     }
@@ -664,20 +671,20 @@ footer a {
 }
 
 @media screen and (max-width: 700px) {
-    .grid-products-1 {
+    .grid-pd-cat-1 {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
 
     .grid-item-products-1 {
-        width: 16rem;
-        height: 16rem;
+        width: 18rem;
+        height: 18rem;
 
     }
 }
 
-@media screen and (max-width: 480px) {
-    .grid-products-1 {
+@media screen and (max-width: 640px) {
+    .grid-pd-cat-1 {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
@@ -697,7 +704,6 @@ footer a {
     font-size: 16px;
     border-radius: 5px;
     margin-top: 1rem;
-    margin-bottom: 1rem;
     width: 90%;
     height: 24rem;
     position: relative; /* Set the container as a relative position */
@@ -739,7 +745,7 @@ footer a {
 /* PRODUCT-BOX */
 .product-parent {
     padding: 1em;
-    width: 100%;
+    width: 90%;
 }
 
 .product-box {
