@@ -45,7 +45,7 @@ Route::get('/dashboard', function () {
 });
 
 /* PRODUCTS - ALL PRODUCTS FROM ONE CATEGORY, SORTED PER SUBCATEGORY */
-Route::get('/categorie/{category:slug}', [ProductController::class, 'showCategory']);
+Route::get('/categorie/{category:slug}', [ProductController::class, 'showProductsBySubcategory']);
 
 /* PRODUCT - ONE PRODUCT */
 Route::get('/product/{product:slug}', [ProductController::class, 'showProduct']);
