@@ -23,7 +23,7 @@
             @foreach($products as $product)
                 <a href="{{ '/product/' . $product->slug }}">
                     <div class="grid-item-products-1">
-                        <div clas="top">
+                        <div class="top">
                             <img src="{{ '/images/' . $product->Image }}">
                              {{ '€' . ' ' . number_format($product->Price, 2) }}
                         </div>

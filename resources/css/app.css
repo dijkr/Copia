@@ -590,8 +590,8 @@ footer a {
     display: flex; /* Display as flex container */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    width: 14rem;
-    height: 14rem;
+    width: 16rem;
+    height: 20rem;
     position: relative;
     overflow: hidden;
     border-style: solid;
@@ -601,8 +601,8 @@ footer a {
 }
 
 .grid-item-products-1 img {
-    width: 100%; /* Occupy the full width of the container */
-    height: 100%; /* Occupy the full height of the container */
+    width: 70%; /* Occupy the full width of the container */
+    height: 70%; /* Occupy the full height of the container */
     object-fit: cover; /* Fit the image while preserving aspect ratio */
     object-position: center; /* Center the image within the container */
 }
