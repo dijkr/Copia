@@ -91,13 +91,10 @@ class ProductController extends Controller
         $products = Product::where('category', $category)->get();
         // Get the subcategory values from the products
         $subcategoryValues = $products->pluck('Subcategory')->toArray();
-        // Query products based on the subcategory
-        $subcategoryData = Product::whereIn('subcategory', $subcategoryValues)->get();
         // Query category data
         $categoryData = Category::where('slug', $category)->first();
         return view('producten', [
             'products' => $products,
-            'subcategoryData' => $subcategoryData,
             'category' => $categoryData
         ]);
     }
