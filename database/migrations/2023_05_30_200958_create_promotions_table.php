@@ -15,10 +15,12 @@ return new class extends Migration
     {
         Schema::create('promotions', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
-            $table->string('EAN');
+            $table->unsignedBigInteger('product_id');
+            $table->foreign('product_id')->references('id')->on('products');
+            $table->string('Title');
             $table->float('DiscountPrice');
             $table->string('ValidUntil');
+            $table->timestamps();
         });
     }
 

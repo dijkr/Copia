@@ -89,7 +89,7 @@ class ProductController extends Controller
         $category = basename($request->getRequestUri());
         // Query products based on the category
         $products = Product::where('category', $category)->get();
-        // Sort products by subcategory
+        // Group products by subcategory
         $groupedProducts = $products->groupBy('Subcategory');
         // Query category data
         $categoryData = Category::where('slug', $category)->first();
