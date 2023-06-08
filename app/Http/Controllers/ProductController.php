@@ -85,16 +85,16 @@ class ProductController extends Controller
     }
 
     /* PRODUCTS - ALL PRODUCTS FROM ONE CATEGORY, SORTED PER SUBCATEGORY */
-    public function showProductsBySubcategory (Request $request) {
+    public function showGroupedProducts (Request $request) {
         $category = basename($request->getRequestUri());
         // Query products based on the category
         $products = Product::where('category', $category)->get();
-        // Get the subcategory values from the products
-        $subcategoryValues = $products->pluck('Subcategory')->toArray();
+        // Sort products by subcategory
+        $groupedProducts = $products->groupBy('Subcategory');
         // Query category data
         $categoryData = Category::where('slug', $category)->first();
         return view('producten', [
-            'products' => $products,
+            'groupedProducts' => $groupedProducts,
             'category' => $categoryData
         ]);
     }
