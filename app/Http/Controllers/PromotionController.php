@@ -16,8 +16,10 @@ class PromotionController extends Controller
     }
 
     public function showRandomPromotions (Request $request) {
-        $promotions = Promotion::all();
-//        dd($promotions);
+        // Get all promotions
+        $promotions = Promotion::with('product')->get();
+        // Create random collection
+        $promotions = $promotions->random(3);
         return view ('home', [
             'promotions' => $promotions
         ]);
