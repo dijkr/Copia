@@ -17,7 +17,7 @@ class CategoryController extends Controller
     public function categoryData (Request $request) {
         $category = basename($request->getRequestUri());
         $categoryData = Category::where('slug', $category)->first();
-        dd($category);
+//        dd($category);
         return view ('producten', [
             'categoryData' => $categoryData
         ]);

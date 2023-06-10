@@ -22,10 +22,10 @@ return new class extends Migration
             $table->string('code')->unique();
             $table->string('password');
             $table->rememberToken();
-            $table->timestamps();
             $table->boolean('is_customer')->default('1');
             $table->boolean('is_admin')->default('0');
             $table->boolean('is_editor')->default('0');
+            $table->timestamps();
         });
     }
 

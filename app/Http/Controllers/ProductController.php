@@ -10,6 +10,7 @@ class ProductController extends Controller
 {
     /* PRODUCTS - ALL PRODUCTS FROM ONE CATEGORY, SORTED PER SUBCATEGORY */
     public function showGroupedProducts (Request $request) {
+        // Find the category
         $category = basename($request->getRequestUri());
         // Query products based on the category
         $products = Product::where('category', $category)->get();

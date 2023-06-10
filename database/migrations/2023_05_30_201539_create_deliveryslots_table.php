@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('deliveryslots', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
             $table->string('StartTime');
             $table->string('EndTime');
             $table->float('Price');
+            $table->timestamps();
         });
     }
 

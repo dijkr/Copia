@@ -15,7 +15,12 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->unsignedBigInteger('category_id');
+            $table->foreign('category_id')->references('id')->on('categories');
+            $table->unsignedBigInteger('subcategory_id');
+            $table->foreign('subcategory_id')->references('id')->on('subcategories');
+            $table->unsignedBigInteger('subsubcategory_id');
+            $table->foreign('subsubcategory_id')->references('id')->on('subsubcategories');
             $table->string('EAN');
             $table->string('slug');
             $table->string('Title');
@@ -25,9 +30,7 @@ return new class extends Migration
             $table->string('Image');
             $table->string('Weight');
             $table->float('Price');
-            $table->string('Category');
-            $table->string('Subcategory');
-            $table->string('Subsubcategory');
+            $table->timestamps();
         });
     }
 
