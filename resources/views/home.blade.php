@@ -18,51 +18,26 @@
         </div>
     </div>
 
-    {{-- ACTIES --}}
+    {{-- PROMOTIONS --}}
+    {{-- PARENT --}}
 <div class="grid-actie-parent">
 
+    {{-- PROMOTION-PRODUCT --}}
+    @foreach ($promotions as $promotion)
     <div class="grid-actie">
-        <a href="#">
+        <a href="{{ '/product/' . $promotion->product->slug }}">
             <div class="grid-actie-left">
-                <h4>Aanbiedingsproduct</h4>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <h4> {{ $promotion->product->Title }} </h4>
+                {{ $promotion->product->Shortdescription }}
             </div>
 
             <div class="grid-actie-right">
-                <img src="{{Vite::asset('resources/backend/assets/img/bananen.png')}}">
-                3.00 EUR
+                <img src="{{ '/images/' . $promotion->product->Image }}">
+                {{ number_format($promotion->DiscountPrice, 2) }}
             </div>
         </a>
     </div>
-
-    <div class="grid-actie">
-        <a href="#">
-            <div class="grid-actie-left">
-                <h4>Aanbiedingsproduct</h4>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </div>
-
-            <div class="grid-actie-right">
-                <img src="{{Vite::asset('resources/backend/assets/img/brood.png')}}">
-                3.00 EUR
-            </div>
-        </a>
-    </div>
-
-    <div class="grid-actie">
-        <a href="#">
-            <div class="grid-actie-left">
-                <h4>Aanbiedingsproduct</h4>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                </div>
-
-            <div class="grid-actie-right">
-                <img src="{{Vite::asset('resources/backend/assets/img/tomaten.png')}}">
-                3.00 EUR
-            </div>
-        </a>
-    </div>
-</div>
+    @endforeach
 
     {{-- NIEUWS --}}
     <div class="nieuws">
