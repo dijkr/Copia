@@ -10,19 +10,19 @@ class ProductController extends Controller
 {
     /* PRODUCTS - GROUPED BY SUBCATEGORY */
     public function showGroupedProducts (Request $request) {
-        dd($request);
         // Find the category
-        $category = basename($request->getRequestUri());
-        // Query products based on the category
-        $products = Product::where('category', $category)->get();
+        $categorySlug = basename($request->getRequestUri());
         // Group products by subcategory
-        dd($products);
+        $products = Product::whereHas('category', function ($query) use ($categorySlug) {
+            $query->where('slug', $categorySlug); })->get();
         $groupedProducts = $products->groupBy('Subcategory');
-        // Query category data
-        $categoryData = Product::where('slug', $category)->first();
+        // Get the category data
+        $product = $products->first();
+        $categoryData = $product->Category;
+
         return view('producten', [
             'groupedProducts' => $groupedProducts,
-            'category' => $categoryData
+            'categoryData' => $categoryData
         ]);
     }
 
@@ -30,7 +30,7 @@ class ProductController extends Controller
     public function showProduct (Request $request) {
         $product = basename($request->getRequestUri());
         $product = Product::where('slug', $product)->first();
-        $category = $product->Category;
+        $category = $product->Category->name;
         $categoryData = Category::where('slug', $category)->first();
         return view('product', [
             'product' => $product,

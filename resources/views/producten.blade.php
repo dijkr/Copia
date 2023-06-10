@@ -4,9 +4,9 @@
 
     <div class="productbanner">
         <div class="productbanner-item">
-            <img src="{{ '/images/banners/' . $category->banner }}">
+            <img src="{{ '/images/banners/' . $categoryData->banner }}">
             <div class="productbanner-text">
-                <h1> {{ $category->name }} </h1>
+                <h1> {{ $categoryData->name }} </h1>
             </div>
         </div>
     </div>
@@ -17,9 +17,13 @@
         @foreach ($groupedProducts as $groupedProduct => $products)
         <div class="grid-pd-cat-1">
             {{-- SUBCATEGORY --}}
+            @php
+                // The resulting key of the array = JSON
+                $subcategory = json_decode($groupedProduct, true);
+            @endphp
             <div class="grid-item-products-1">
                 <div class="cat">
-                    <h4> {{ $groupedProduct }} </h4>
+                    <h4> {{ $subcategory['name'] }} </h4>
                 </div>
             </div>
 
