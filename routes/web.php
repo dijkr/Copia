@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\Category;
-use App\Models\Product;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\PromotionController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,20 +17,13 @@ use App\Http\Controllers\ProductController;
 */
 
 /* FRONTPAGE */
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [PromotionController::class, 'showRandomPromotions']);
 
-/* CATEGORIES - ALL MAIN CATEGORIES */
-Route::get('categorien', function () {
-    return view('categorien', [
-        'categories' => Category::all()
-    ]);
-});
+/* CATEGORIES - OVERVIEW */
+Route::get('categorien', [CategoryController::class, 'showCategories']);
 
-Route::get('/aanbiedingen', function () {
-    return view('aanbiedingen');
-});
+/* PROMOTIONS - OVERVIEW */
+Route::get('aanbiedingen', [PromotionController::class, 'showPromotions']);
 
 Route::get('winkelwagen', function () {
     return view('winkelwagen');
@@ -44,7 +37,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
-/* PRODUCTS - ALL PRODUCTS FROM ONE CATEGORY, SORTED PER SUBCATEGORY */
+/* PRODUCTS - OVERVIEW GROUPED BY CATEGORY */
 Route::get('/categorie/{category:slug}', [ProductController::class, 'showGroupedProducts']);
 
 /* PRODUCT - ONE PRODUCT */
