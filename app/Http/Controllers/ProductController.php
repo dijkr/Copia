@@ -19,7 +19,6 @@ class ProductController extends Controller
         // Get the category data
         $product = $products->first();
         $categoryData = $product->Category;
-
         return view('producten', [
             'groupedProducts' => $groupedProducts,
             'categoryData' => $categoryData
@@ -28,13 +27,15 @@ class ProductController extends Controller
 
     /* PRODUCT - ONE PRODUCT */
     public function showProduct (Request $request) {
+        // Find the product
         $product = basename($request->getRequestUri());
+        // Get the product data
         $product = Product::where('slug', $product)->first();
-        $category = $product->Category->name;
-        $categoryData = Category::where('slug', $category)->first();
+        // Get the category data
+        $category = $product->Category;
         return view('product', [
             'product' => $product,
-            'category' => $categoryData
+            'category' => $category
         ]);
     }
 }
