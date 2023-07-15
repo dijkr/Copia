@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    /* PRODUCTS - GROUPED BY SUBCATEGORY */
+    // Get products, grouped per subcategory
     public function showGroupedProducts (Request $request) {
         // Find the category
         $categorySlug = basename($request->getRequestUri());
@@ -25,7 +25,7 @@ class ProductController extends Controller
         ]);
     }
 
-    /* PRODUCT - ONE PRODUCT */
+    // Get one product
     public function showProduct (Request $request) {
         // Find the product
         $product = basename($request->getRequestUri());

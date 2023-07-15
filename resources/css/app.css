@@ -356,6 +356,7 @@ footer a {
     border-radius: 5px;
     border-width: 1px;
     border-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
 }
 
 .grid-actie:hover {
@@ -401,6 +402,14 @@ footer a {
 }
 
 @media screen and (max-width: 538px) {
+    .aanbiedingsactie {
+        width: 95%;
+    }
+
+    .aanbiedingsactie {
+        width: 95%;
+    }
+
     .grid-aanbiedingen-1 {
         grid-template-columns: 1fr;
         gap: 1rem;
@@ -413,9 +422,8 @@ footer a {
     padding: 0;
     font-size: 16px;
     border-radius: 5px;
-    margin-bottom: 1rem;
     height: 24rem;
-    width: 90%;
+    width: 100%;
     position: relative; /* Set the container as a relative position */
 
 }

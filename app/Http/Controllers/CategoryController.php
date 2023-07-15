@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
+    // Get all categories
     public function showCategories (Request $request) {
         $categories = Category::all();
         return view ('categorien', [
@@ -14,6 +15,7 @@ class CategoryController extends Controller
         ]);
     }
 
+    // Get information about a category
     public function categoryData (Request $request) {
         $category = basename($request->getRequestUri());
         $categoryData = Category::where('slug', $category)->first();
