@@ -1,4 +1,5 @@
-**Development system**
+[h3]Development system[/h3]
+<br>
 - Proxmox (o.a. back-ups, snapshots)
 - AlmaLinux 9.1
 - Apache 2.4.53
@@ -11,12 +12,12 @@
 - TablePlus + PHPMyAdmin for remote DB-management
 - NoMachine for remote GUI via NX
 - Putty for remote CLI via SSH
-
+  <br>
 Schematekening maken met Visio
-
+  <br>
 **Bestanden**
 Onderstaande bestanden hebben momenteel een aandeel in het project.
-
+  <br>
 **Models:**
 Category.php
 Product.php
