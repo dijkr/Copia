@@ -1,3 +1,4 @@
+<hr>
 <h3>Development system</h3>
 
 - Proxmox (o.a. back-ups, snapshots)
@@ -85,4 +86,4 @@ Deze bestanden betreffen de inhoud voor CSS en Javascript.
 
 **Vite.config.js** <br>
 Vite leest continue wijzigingen aan app.css en app.js. Ook wordt bij een wijziging, dit in de development-webbrowser weergegeven. Zodoende hoeft de webbrowser niet handmatig te refreshen om de website te updaten na aanpassingen aan app.css en app.js.
-
+<hr>
