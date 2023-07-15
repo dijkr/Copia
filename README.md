@@ -1,6 +1,4 @@
-<span style="color:green">
 <h3>Development system</h3>
-</span>
 
 - Proxmox (o.a. back-ups, snapshots)
 - AlmaLinux 9.1
@@ -16,10 +14,8 @@
 - Putty for remote CLI via SSH
 
 Schematekening maken met Visio
-
-<span style="color:green">
+<hr>
 <h3>Bestanden</h3>
-</span>
 Onderstaande bestanden hebben momenteel een aandeel in het project.
   
 **Models:**
@@ -54,9 +50,8 @@ Onderstaande bestanden hebben momenteel een aandeel in het project.
 - Diverse afbeeldingen
 - Diverse migration_table.php-bestanden
 
-<span style="color:green">
+<hr>
 <h3>Toelichting</h3>
-</span>
 
 **Models aandachtspunten**
 -	De models en controllers zijn aangemaakt met php artisan.
