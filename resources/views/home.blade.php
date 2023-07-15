@@ -7,6 +7,7 @@
 @extends('components.layout')
 @section('content')
 
+    {{-- PROMOTION - CURRENT WEEK --}}
     <div class="aanbiedingsactie">
         <div class="aanbiedingsactie-item">
             <img src="{{Vite::asset('resources/backend/assets/img/banners/banner_food.jpeg')}}">
@@ -18,7 +19,7 @@
         </div>
     </div>
 
-    {{-- PROMOTIONS --}}
+    {{-- PROMOTION - PRODUCTS --}}
     {{-- PARENT --}}
     <div class="grid-actie-parent">
 

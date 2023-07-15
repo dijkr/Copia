@@ -16,7 +16,7 @@ use App\Http\Controllers\CategoryController;
 |
 */
 
-/* FRONTPAGE */
+/* FRONTPAGE - HOME */
 Route::get('/', [PromotionController::class, 'showRandomPromotions']);
 
 /* CATEGORIES - OVERVIEW */
@@ -25,20 +25,23 @@ Route::get('categorien', [CategoryController::class, 'showCategories']);
 /* PROMOTIONS - OVERVIEW */
 Route::get('aanbiedingen', [PromotionController::class, 'showPromotions']);
 
-Route::get('winkelwagen', function () {
-    return view('winkelwagen');
-});
-
-Route::get('/bestellen', function () {
-    return view('bestellen');
-});
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
-
 /* PRODUCTS - OVERVIEW GROUPED BY CATEGORY */
 Route::get('/categorie/{category:slug}', [ProductController::class, 'showGroupedProducts']);
 
 /* PRODUCT - ONE PRODUCT */
 Route::get('/product/{product:slug}', [ProductController::class, 'showProduct']);
+
+/* DEFAULT */
+Route::get('winkelwagen', function () {
+    return view('winkelwagen');
+});
+
+/* DEFAULT */
+Route::get('/bestellen', function () {
+    return view('bestellen');
+});
+
+/* DEFAULT */
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});

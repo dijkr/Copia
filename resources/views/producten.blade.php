@@ -13,10 +13,10 @@
 
     <div class="grid-products-1">
 
-        {{-- SUBCATEGORY WITH PRODUCTS --}}
+        {{-- SHOW THE SUBCATEGORY AND ITS PRODUCTS --}}
         @foreach ($groupedProducts as $groupedProduct => $products)
         <div class="grid-pd-cat-1">
-            {{-- SUBCATEGORY --}}
+            {{-- SHOW THE SUBCATEGORY --}}
             @php
                 // The resulting key of the array = JSON
                 $subcategory = json_decode($groupedProduct, true);
@@ -27,7 +27,7 @@
                 </div>
             </div>
 
-             {{-- SUBCATEGORY ITS PRODUCTS --}}
+             {{-- SHOW THE SUBCATEGORY ITS PRODUCTS --}}
             @foreach ($products as $product)
             <a href="{{ '/product/' . $product->slug }}">
                 <div class="grid-item-products-1">

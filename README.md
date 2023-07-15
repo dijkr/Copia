@@ -76,7 +76,6 @@ De controller specificeerd de view voor de functie. Wat betekend dat het resulta
 
 **Routes** <br>
 De controller specificeerd de view voor de functie. Wat betekend dat het resultaat van de controller beschikbaar is voor de desbetreffende view. Hierdoor zie je niet welke view wordt toegepast voor een bepaalde route.
--	[web.php] De controllers worden specifiek genoemd om bruikbaar te maken voor routes.
 -	De route gebruikt controller-functies om data te verkrijgen. Het resultaat is beschikbaar voor de view. De view wordt
 
 **.env** <br>

@@ -1,6 +1,8 @@
 @extends('components.layout')
 
 @section('content')
+
+    {{-- PRODUCTBANNER --}}
     <div class="productbanner">
         <div class="productbanner-item">
             <img src="{{ '/images/banners/' . $category->banner }}">
@@ -30,12 +32,12 @@
             </div>
         </div>
 
-        {{-- PRODUCTOMSCHRIJVING-KOP --}}
+        {{-- PRODUCTDESCRIPTION - TITLE --}}
         <div class="titel">
             <h4>Productomschrijving</h4>
         </div>
 
-        {{-- PRODUCTOMSCHRIJVING --}}
+        {{-- PRODUCTDESCRIPTION --}}
         <div class="product-box-omschrijving">
             <div class="cat">
                 {{ $product->Fulldescription }}
