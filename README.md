@@ -15,7 +15,10 @@
 - NoMachine for remote GUI via NX
 - Putty for remote CLI via SSH
 
-Schematekening maken met Visio
+Het project is gestart door het installeren van de benodigde software. 
+Vervolgens is met Composer het project opgestart. Vervolgens zijn er
+models en controllers aangemaakt met Artisan.
+
 <hr>
 <h3>Bestanden</h3>
 Onderstaande bestanden hebben momenteel een aandeel in het project.
@@ -86,4 +89,7 @@ Deze bestanden betreffen de inhoud voor CSS en Javascript.
 
 **Vite.config.js** <br>
 Vite leest continue wijzigingen aan app.css en app.js. Ook wordt bij een wijziging, dit in de development-webbrowser weergegeven. Zodoende hoeft de webbrowser niet handmatig te refreshen om de website te updaten na aanpassingen aan app.css en app.js.
+<hr>
+<h3>Improvement</h3>
+Sugguesties en het oplossen van bekende problemen worden via de Github Issues module bijgehouden en afgewerkt.
 <hr>
