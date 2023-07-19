@@ -16,7 +16,7 @@
 - Putty for remote CLI via SSH
 
 Het project is gestart door het installeren van de benodigde software. 
-Vervolgens is met Composer het project opgestart. Vervolgens zijn er
+Vervolgens is met Composer het project opgestart. Hiernaar zijn er
 models en controllers aangemaakt met Artisan.
 
 <hr>

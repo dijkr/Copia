@@ -10,6 +10,7 @@ class CategoryController extends Controller
     // Get all categories
     public function showCategories (Request $request) {
         $categories = Category::all();
+        // dd($categories);
         return view ('categorien', [
            'categories' => $categories
         ]);
