@@ -105,7 +105,7 @@ return [
     |
     */
 
-    'theme' => env('STATAMIC_THEME', 'rad'),
+    'theme' => env('STATAMIC_THEME', 'business'),
 
     /*
     |--------------------------------------------------------------------------
@@ -118,7 +118,7 @@ return [
     |
     */
 
-    'custom_cms_name' => env('STATAMIC_CUSTOM_CMS_NAME', 'Statamic'),
+    'custom_cms_name' => env('STATAMIC_CUSTOM_CMS_NAME', 'Copia CMS'),
 
     'custom_logo_url' => env('STATAMIC_CUSTOM_LOGO_URL', null),
 

@@ -24,7 +24,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | Additional fields may be added to the Live Preview header bar. You
-    | may define a list of Vue components to be injected. Their values
+    | may define a list of Vue partials to be injected. Their values
     | will be added to the cascade on the front-end for you to use.
     |
     */

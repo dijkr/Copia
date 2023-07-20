@@ -1,8 +1,8 @@
-
 <!doctype html>
 <html>
 <head>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {{ vite src='resources/css/app.css' }}
+    {{ vite src='resources/js/app.js' }}
     <title>Commodum Copia</title>
 
     <!-- Required meta tags -->
@@ -12,13 +12,14 @@
 
 
 <body>
-@include('components.header')
+    {{ partial:header }}
 
 <!-- ===============================================================================
                 MAIN CONTENT
 =============================================================================== -->
-@yield('content')
-@include('components.footer')
+    {{ template_content }}
+
+    {{ partial:footer }}
 </body>
 
 </html>

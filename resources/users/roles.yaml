@@ -1,4 +1,27 @@
-# admin:
-#   title: Administrator
-#   permissions:
-#     - super
+editor:
+  title: Editor
+  permissions:
+    - 'access cp'
+    - 'view news entries'
+    - 'edit news entries'
+    - 'create news entries'
+    - 'publish news entries'
+    - 'view promotions entries'
+    - 'edit promotions entries'
+    - 'create promotions entries'
+    - 'publish promotions entries'
+    - 'view banners assets'
+    - 'upload banners assets'
+admin:
+  title: Admin
+  permissions:
+    - 'access cp'
+    - 'view users'
+    - 'edit users'
+    - 'create users'
+    - 'delete users'
+    - 'change passwords'
+    - 'assign user groups'
+    - 'assign roles'
+    - 'edit user groups'
+    - 'edit roles'

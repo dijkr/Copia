@@ -1,0 +1,46 @@
+    {{# PROMOTION - CURRENT WEEK #}}
+    <div class="aanbiedingsactie">
+        <div class="aanbiedingsactie-item">
+            <img src="{{ banner }}">
+            <div class="text-overlay-actie">
+                <h2> {{ title }}</h2>
+                <h3> {{ subtitle }}</h3>
+                <a href=" {{ link }}">Aanbiedingen</a>
+            </div>
+        </div>
+    </div>
+
+    {{# PROMOTION - PRODUCTS #}}
+    {{# PARENT #}}
+    <div class="grid-actie-parent">
+
+        {{# PROMOTION-PRODUCT #}}
+        @foreach ($promotions as $promotion)
+            <div class="grid-actie">
+                <a href="/product/{{ $promotion.product.slug }}">
+                    <div class="grid-actie-left">
+                        <h4> {{ $promotion.product.Title }} </h4>
+                        {{ $promotion.product.Shortdescription }}
+                    </div>
+
+                    <div class="grid-actie-right">
+                        <img src="/images/{{ $promotion.product.Image }}">
+                        {{ $promotion.DiscountPrice format_number="2" }}
+                    </div>
+                </a>
+            </div>
+        @endforeach
+
+        {{# NIEUWS #}}
+        <div class="nieuws">
+            <div class="nieuws-item">
+                <img src="{{ banner }}">
+                <div class="text-overlay-nieuws">
+                    <h2> {{ title }} </h2>
+                    <h3> {{ short_description }} </h3>
+                    <a href=" {{ link }}">Volledig nieuwsbericht</a>
+                </div>
+            </div>
+        </div>
+
+    </div> {{# Closing div for grid-actie-parent #}}
