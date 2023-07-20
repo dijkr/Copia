@@ -1,3 +1,5 @@
+<section>
+
     {{# PROMOTION - CURRENT WEEK #}}
     <div class="aanbiedingsactie">
         <div class="aanbiedingsactie-item">
@@ -15,7 +17,7 @@
     <div class="grid-actie-parent">
 
         {{# PROMOTION-PRODUCT #}}
-        @foreach ($promotions as $promotion)
+        {{ foreach array="promotions:promotion" }}
             <div class="grid-actie">
                 <a href="/product/{{ $promotion.product.slug }}">
                     <div class="grid-actie-left">
@@ -29,7 +31,7 @@
                     </div>
                 </a>
             </div>
-        @endforeach
+        {{ /foreach }}
 
         {{# NIEUWS #}}
         <div class="nieuws">
@@ -44,3 +46,5 @@
         </div>
 
     </div> {{# Closing div for grid-actie-parent #}}
+
+</section>

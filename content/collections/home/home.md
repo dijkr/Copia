@@ -6,5 +6,5 @@ subtitle: 'De scherpste prijzen'
 title_news: 'Nieuws week 30'
 short_description: 'Er is van alles gebeurd!'
 updated_by: eaac8844-79f3-4e20-b2d8-406cc0cd3cbd
-updated_at: 1689874878
+updated_at: 1689882043
 ---

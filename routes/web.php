@@ -45,3 +45,8 @@ Route::get('/bestellen', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
+
+/* DEFAULT */
+Route::get('/layout', function () {
+    return view('layout');
+});
