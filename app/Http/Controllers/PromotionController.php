@@ -16,15 +16,18 @@ class PromotionController extends Controller
     }
 
     // Get all promotions
-    public function showPromotions (Request $request) {
+    public function showPromotions (Request $request)
+    {
         $promotions = Promotion::all();
-        return view ('aanbiedingen', [
-            'promotions' => $promotions
-        ]);
+        return (new \Statamic\View\View)
+            ->template('aanbiedingen')
+            ->layout('layout')
+            ->with(['promotions' => '$promotions']);
     }
 
     // Get random promotions
-    public function showRandomPromotions (Request $request) {
+    public function showRandomPromotions (Request $request)
+    {
         // Current date
         $date = strftime("%d-%m-%Y");
         // Get all promotions valid until a specific date
@@ -33,8 +36,8 @@ class PromotionController extends Controller
             ->get();
         // Create random collection
         $promotions = $promotions->random(3);
-        return view ('home', [
-            'promotions' => $promotions
-        ]);
-    }
-}
+        return (new \Statamic\View\View)
+            ->template('home')
+            ->layout('layout')
+            ->with(['promotions' => '$promotions']);
+        }};

@@ -1,5 +1,5 @@
 title: Pages
-template: home
+template: default
 layout: layout
 revisions: false
 sort_dir: asc

@@ -33,20 +33,21 @@ Route::get('/product/{product:slug}', [ProductController::class, 'showProduct'])
 
 /* DEFAULT */
 Route::get('winkelwagen', function () {
-    return view('winkelwagen');
+    return (new \Statamic\View\View)
+        ->template('winkelwagen')
+        ->layout('layout');
 });
 
 /* DEFAULT */
 Route::get('/bestellen', function () {
-    return view('bestellen');
+    return (new \Statamic\View\View)
+        ->template('bestellen')
+        ->layout('layout');
 });
 
 /* DEFAULT */
 Route::get('/dashboard', function () {
-    return view('dashboard');
-});
-
-/* DEFAULT */
-Route::get('/layout', function () {
-    return view('layout');
+    return (new \Statamic\View\View)
+        ->template('dashboard')
+        ->layout('layout');
 });

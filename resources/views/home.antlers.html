@@ -1,16 +1,18 @@
 <section>
 
     {{# PROMOTION - CURRENT WEEK #}}
+    {{ collection:home }}
     <div class="aanbiedingsactie">
         <div class="aanbiedingsactie-item">
-            <img src="{{ banner }}">
+            <img src="{{ banner_pm }}">
             <div class="text-overlay-actie">
                 <h2> {{ title }}</h2>
                 <h3> {{ subtitle }}</h3>
-                <a href=" {{ link }}">Aanbiedingen</a>
+                <a href=" {{ link_pm }}">Aanbiedingen</a>
             </div>
         </div>
     </div>
+    {{ /collection:home }}
 
     {{# PROMOTION - PRODUCTS #}}
     {{# PARENT #}}
@@ -34,16 +36,18 @@
         {{ /foreach }}
 
         {{# NIEUWS #}}
+        {{ collection:home }}
         <div class="nieuws">
             <div class="nieuws-item">
-                <img src="{{ banner }}">
+                <img src="{{ banner_news }}">
                 <div class="text-overlay-nieuws">
-                    <h2> {{ title }} </h2>
+                    <h2> {{ title_news }} </h2>
                     <h3> {{ short_description }} </h3>
-                    <a href=" {{ link }}">Volledig nieuwsbericht</a>
+                    <a href=" {{ link_news }}">Volledig nieuwsbericht</a>
                 </div>
             </div>
         </div>
+        {{ /collection:home }}
 
     </div> {{# Closing div for grid-actie-parent #}}
 
