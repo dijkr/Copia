@@ -3,13 +3,13 @@
     {{# PROMOTION - CURRENT WEEK #}}
     {{ collection:home }}
     <div class="aanbiedingsactie">
-        <div class="aanbiedingsactie-item">
-            <img src="{{ banner_pm }}">
+{{#         <div class="aanbiedingsactie-item"> #}}
+            <img src="{{ banner_pm }}"/>
             <div class="text-overlay-actie">
                 <h2> {{ title }}</h2>
                 <h3> {{ subtitle }}</h3>
                 <a href=" {{ link_pm }}">Aanbiedingen</a>
-            </div>
+{{#             </div> #}}
         </div>
     </div>
     {{ /collection:home }}
@@ -21,7 +21,7 @@
         {{# PROMOTION-PRODUCT #}}
         {{ foreach array="promotions:promotion" }}
             <div class="grid-actie">
-                <a href="/product/{{ $promotion.product.slug }}">
+                <a href="{{ $promotion.product.slug }}">
                     <div class="grid-actie-left">
                         <h4> {{ $promotion.product.Title }} </h4>
                         {{ $promotion.product.Shortdescription }}
@@ -39,7 +39,7 @@
         {{ collection:home }}
         <div class="nieuws">
             <div class="nieuws-item">
-                <img src="{{ banner_news }}">
+                <img src="{{ banner_news }}"/>
                 <div class="text-overlay-nieuws">
                     <h2> {{ title_news }} </h2>
                     <h3> {{ short_description }} </h3>
