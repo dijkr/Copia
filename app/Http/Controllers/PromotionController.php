@@ -4,40 +4,33 @@ namespace App\Http\Controllers;
 
 use App\Models\Promotion;
 use Illuminate\Http\Request;
+use Statamic\View\View;
 
 class PromotionController extends Controller
 {
-    // Get the number of the current week
-    public function week ()
-    {
-        // Number of the current week
-        $week = strftime("%W");
-        return $week;
-    }
-
-    // Get all promotions
+    // Get all promotion-products
     public function showPromotions (Request $request)
     {
         $promotions = Promotion::all();
-        return (new \Statamic\View\View)
-            ->template('aanbiedingen')
+
+        return View::make('aanbiedingen')
             ->layout('layout')
-            ->with(['promotions' => '$promotions']);
+            ->with(['promotions' => $promotions ]);
     }
 
     // Get random promotions
     public function showRandomPromotions (Request $request)
     {
         // Current date
-        $date = strftime("%d-%m-%Y");
-        // Get all promotions valid until a specific date
+//        $date = strftime("%d-%m-%Y");
+        // Get three random promotion-products
         $promotions = Promotion::with('product')
             ->where('ValidUntil', '<=', '26-06-2023')
-            ->get();
-        // Create random collection
-        $promotions = $promotions->random(3);
-        return (new \Statamic\View\View)
-            ->template('home')
+            ->get()
+            ->random(3);
+
+        return View::make('home')
             ->layout('layout')
-            ->with(['promotions' => '$promotions']);
-        }};
+            ->with(['promotions' => $promotions ]);
+        }
+};
