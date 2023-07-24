@@ -19,21 +19,21 @@
     <div class="grid-actie-parent">
 
         {{# PROMOTION-PRODUCT #}}
-        {{ foreach:promotions }}
+        {{ promotions }}
             <div class="grid-actie">
-                <a href="/product/{{ promotion.product.slug }}">
+                <a href="/product/{{ product.slug }}">
                     <div class="grid-actie-left">
                         <h4>{{ promotion.product.Title }}</h4>
-                        {{ promotion.product.Shortdescription }}
+                        {{ product.Shortdescription }}
                     </div>
 
                     <div class="grid-actie-right">
-                        <img src="/images/{{ promotion.product.Image }}">
-                        {{ promotion.DiscountPrice format_number="2" }}
+                        <img src="/images/{{ product.Image }}">
+                        {{ DiscountPrice format_number="2" }}
                     </div>
                 </a>
             </div>
-        {{ /foreach:promotions }}
+        {{ /promotions }}
     </div> {{# Closing div for grid-actie-parent #}}
 
         {{# NIEUWS #}}

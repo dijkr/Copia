@@ -1,6 +1,6 @@
  <div class="productbanner">
         <div class="productbanner-item">
-            <img src="{{ '/images/banners/' . $categoryData->banner }}">
+            <img src="/images/banners/{{ categoryData.banner }}">
             <div class="productbanner-text">
                 <h1> {{ categoryData.name }} </h1>
             </div>
@@ -10,13 +10,11 @@
     <div class="grid-products-1">
 
         {{# SHOW THE SUBCATEGORY AND ITS PRODUCTS #}}
-        @foreach ($groupedProducts as $groupedProduct => $products)
+        {{ groupedProducts }}
             <div class="grid-pd-cat-1">
                 {{# SHOW THE SUBCATEGORY #}}
-                @php
-                    // The resulting key of the array = JSON
-                    $subcategory = json_decode($groupedProduct, true);
-                @endphp
+                {{# Convert the JSON string to an array #}}
+                {{ subcategory = groupedProduct json_decode(true) }}
                 <div class="grid-item-products-1">
                     <div class="cat">
                         <h4> {{ $subcategory['name'] }} </h4>
@@ -24,22 +22,21 @@
                 </div>
 
                 {{# SHOW THE SUBCATEGORY ITS PRODUCTS #}}
-                @foreach ($products as $product)
-                    <a href="{{ '/product/' . $product->slug }}">
+                {{ Products }}
+                    <a href="/product/{{ product.slug }}">
                         <div class="grid-item-products-1">
                             <div class="top">
-                                <img src="{{ '/images/' . $product->Image }}">
-                                {{ '€' . ' ' . number_format($product->Price, 2) }}
+                                <img src="/images/{{ product.Image }}">
+{{#                                 {{ '€' . ' ' . number_format(product.Price, 2) }} #}}
+                               '€' . {{ Price format_number="2" }}
                             </div>
                             <div class="bottom">
-                                {{ $product->Title }}
-                                {{ $product->Shortdescription }}
+                                {{ product.Title }}
+                                {{ product.Shortdescription }}
                             </div>
                         </div>
                     </a>
-                @endforeach
+                {{ /Products }}
             </div>
-        @endforeach
+        {{ /groupedProducts }}
     </div>
-
-@endsection

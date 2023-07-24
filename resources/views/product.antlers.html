@@ -1,30 +1,26 @@
-@extends('components.layout.antlers.html')
-
-@section('content')
-
-    {{-- PRODUCTBANNER --}}
+    {{# PRODUCTBANNER #}}
     <div class="productbanner">
         <div class="productbanner-item">
-            <img src="{{ '/images/banners/' . $category->banner }}">
+            <img src="/images/banners/{{ category.banner }}">
             <div class="productbanner-text">
-                <h1> {{ $category->name }} </h1>
+                <h1> {{ category.name }} </h1>
             </div>
         </div>
     </div>
 
-    {{-- PARENT --}}
+    {{# PARENT #}}
     <div class="product-parent">
 
-        {{-- BOX --}}
+        {{# BOX #}}
         <div class="product-box">
             <div class="left">
-                <img src="{{ '/images/' . $product->Image }}">
+                <img src="/images/{{ product.Image }}">
             </div>
 
             <div class="middle">
-                <h3> {{ $product->Title }} </h3>
-                {{ '€' . ' ' . number_format($product->Price, 2) }}
-                <p>{{ $product->Shortdescription }}</p>
+                <h3> {{ product.Title }} </h3>
+                {{ product.Price format_number="2" }}
+                <p>{{ product.Shortdescription }}</p>
             </div>
 
             <div class="right">
@@ -32,18 +28,16 @@
             </div>
         </div>
 
-        {{-- PRODUCTDESCRIPTION - TITLE --}}
+        {{# PRODUCTDESCRIPTION - TITLE #}}
         <div class="titel">
             <h4>Productomschrijving</h4>
         </div>
 
-        {{-- PRODUCTDESCRIPTION --}}
+        {{# PRODUCTDESCRIPTION #}}
         <div class="product-box-omschrijving">
             <div class="cat">
-                {{ $product->Fulldescription }}
+                {{ product.Fulldescription }}
             </div>
         </div>
 
     </div>
-
-@endsection

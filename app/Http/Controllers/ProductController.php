@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Statamic\View\View;
 
 class ProductController extends Controller
 {
@@ -19,10 +20,12 @@ class ProductController extends Controller
         // Get the category data
         $product = $products->first();
         $categoryData = $product->Category;
-        return view('producten', [
-            'groupedProducts' => $groupedProducts,
-            'categoryData' => $categoryData
-        ]);
+
+        return View::make('producten')
+            ->layout('layout')
+            ->with(['groupedProducts' => $groupedProducts,
+                    'categoryData' => $categoryData
+            ]);
     }
 
     // Get one product
@@ -33,9 +36,11 @@ class ProductController extends Controller
         $product = Product::where('slug', $product)->first();
         // Get the category data
         $category = $product->Category;
-        return view('product', [
-            'product' => $product,
-            'category' => $category
-        ]);
+
+        return View::make('product')
+            ->layout('layout')
+            ->with(['product' => $product,
+                'category' => $category
+            ]);
     }
 }
