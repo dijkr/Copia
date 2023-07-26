@@ -10,6 +10,7 @@
 - PHPStorm 2022.3.2
 - Laravel 9.52.7
 - Vite 4.3.5
+- Statamic 4 CMS
 - Github
 - TablePlus + PHPMyAdmin for remote DB-management
 - NoMachine for remote GUI via NX

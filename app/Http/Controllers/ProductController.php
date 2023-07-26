@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Category;
 use Illuminate\Http\Request;
 use Statamic\View\View;
 
@@ -14,6 +15,9 @@ class ProductController extends Controller
         // Find the category
         $categorySlug = basename($request->getRequestUri());
 
+        // Get the category data
+        $categoryData = Category::where('slug', $categorySlug)->first();
+
         // Group products by subcategory
         $products = Product::whereHas('category', function ($query) use ($categorySlug) {
             $query->where('slug', $categorySlug); })->get();
@@ -22,11 +26,7 @@ class ProductController extends Controller
               $name = $subcategory['name'];
               return [$name => $products];
           });
-//        dd($groupedProducts);
 
-        // Get the category data
-        $product = $products->first();
-        $categoryData = $product->Category;
         return View::make('producten')
             ->layout('layout')
             ->with(['groupedProducts' => $groupedProducts,
