@@ -16,7 +16,7 @@ class ProductController extends Controller
         $categorySlug = basename($request->getRequestUri());
 
         // Get the category data
-        $categoryData = Category::where('slug', $categorySlug)->first();
+        $category = Category::where('slug', $categorySlug)->first();
 
         // Group products by subcategory
         $products = Product::whereHas('category', function ($query) use ($categorySlug) {
@@ -30,7 +30,7 @@ class ProductController extends Controller
         return View::make('producten')
             ->layout('layout')
             ->with(['groupedProducts' => $groupedProducts,
-                    'categoryData' => $categoryData
+                    'category' => $category
             ]);
     }
 
