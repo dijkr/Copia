@@ -22,7 +22,8 @@ class ProductController extends Controller
               $name = $subcategory['name'];
               return [$name => $products];
           });
-        dd($groupedProducts);
+//        dd($groupedProducts);
+
         // Get the category data
         $product = $products->first();
         $categoryData = $product->Category;

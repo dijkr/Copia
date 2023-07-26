@@ -15,12 +15,12 @@
                 {{# SHOW THE SUBCATEGORY #}}
                 <div class="grid-item-products-1">
                     <div class="cat">
-                        <h4> {{ subcategory['name'] }} </h4>
+                        <h4> {{ key }} </h4>
                     </div>
                 </div>
 
                 {{# SHOW THE SUBCATEGORY ITS PRODUCTS #}}
-                {{ Products }}
+                {{ value }}
                     <a href="/product/{{ slug }}">
                         <div class="grid-item-products-1">
                             <div class="top">
@@ -33,7 +33,7 @@
                             </div>
                         </div>
                     </a>
-                {{ /Products }}
+                {{ /value }}
             </div>
         {{ /foreach:groupedProducts }}
     </div>
