@@ -1,9 +1,8 @@
 tabs:
   main:
-    display: Producten
+    display: Main
     sections:
       -
-        display: Category
         fields:
           -
             handle: title
@@ -12,15 +11,11 @@ tabs:
               required: true
               validate:
                 - required
-              instructions_position: above
-              listable: hidden
-              visibility: visible
-              input_type: text
-              antlers: false
-              hide_display: false
           -
             handle: banner
             field:
+              max_files: 1
+              min_files: 1
               mode: list
               container: banners
               restrict: false
@@ -28,14 +23,12 @@ tabs:
               show_filename: true
               show_set_alt: true
               type: assets
-              display: Banner
+              display: banner
               icon: assets
               listable: hidden
               instructions_position: above
               visibility: visible
               hide_display: false
-              max_files: 1
-              min_files: 1
   sidebar:
     display: Sidebar
     sections:
@@ -46,4 +39,4 @@ tabs:
             field:
               type: slug
               localizable: true
-title: Category
+title: Product

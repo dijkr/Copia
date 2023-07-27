@@ -49,4 +49,9 @@ class ProductController extends Controller
                 'category' => $category
             ]);
     }
+
+    // Search products
+    public function searchProduct (request $request) {
+        
+    }
 }
