@@ -19,11 +19,11 @@ class CategoryController extends Controller
             ]);
     }
 
-    // Get information about a category
+    // Get information about a promotions
     public function categoryData (Request $request) {
         $category = basename($request->getRequestUri());
         $categoryData = Category::where('slug', $category)->first();
-//        dd($category);
+//        dd($promotions);
 
         return View::make('producten')
             ->layout('layout')

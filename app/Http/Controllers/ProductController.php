@@ -12,10 +12,10 @@ class ProductController extends Controller
     // Get products, grouped per subcategory
     public function showGroupedProducts (Request $request) {
 
-        // Find the category
+        // Find the promotions
         $categorySlug = basename($request->getRequestUri());
 
-        // Get the category data
+        // Get the promotions data
         $category = Category::where('slug', $categorySlug)->first();
 
         // Group products by subcategory
@@ -40,7 +40,7 @@ class ProductController extends Controller
         $product = basename($request->getRequestUri());
         // Get the product data
         $product = Product::where('slug', $product)->first();
-        // Get the category data
+        // Get the promotions data
         $category = $product->Category;
 
         return View::make('product')

@@ -12,6 +12,12 @@ tabs:
               required: true
               validate:
                 - required
+              instructions_position: above
+              listable: hidden
+              visibility: hidden
+              input_type: text
+              antlers: false
+              hide_display: false
           -
             handle: banner
             field:
@@ -28,6 +34,8 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
+              max_files: 1
+              min_files: 1
   sidebar:
     display: Sidebar
     sections:

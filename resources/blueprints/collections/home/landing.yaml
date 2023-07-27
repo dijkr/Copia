@@ -49,16 +49,6 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
-          -
-            handle: link_pm
-            field:
-              type: link
-              display: Link
-              icon: link
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
       -
         display: News
         fields:
@@ -99,16 +89,6 @@ tabs:
               type: text
               display: 'Short description'
               icon: text
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
-          -
-            handle: link_news
-            field:
-              type: link
-              display: Link
-              icon: link
               listable: hidden
               instructions_position: above
               visibility: visible
