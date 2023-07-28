@@ -26,7 +26,6 @@ class ProductController extends Controller
               $name = $subcategory['name'];
               return [$name => $products];
           });
-
         return View::make('producten')
             ->layout('layout')
             ->with(['groupedProducts' => $groupedProducts,
@@ -52,6 +51,6 @@ class ProductController extends Controller
 
     // Search products
     public function searchProduct (request $request) {
-        
+
     }
 }
