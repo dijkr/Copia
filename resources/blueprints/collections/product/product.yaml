@@ -23,7 +23,7 @@ tabs:
               show_filename: true
               show_set_alt: true
               type: assets
-              display: banner
+              display: Banner
               icon: assets
               listable: hidden
               instructions_position: above

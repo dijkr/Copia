@@ -126,21 +126,32 @@ header {
     padding: 5px;
 }
 
-.search {
+/* HEADER NAVIGATION BAR - SEARCH */
+.search-pt {
+    display: flex;
+    align-items: center; /* Vertically align items */
+}
+
+.searchfield {
     max-width: 250px;
-    justify-content: center;
     border-radius: 20px; /* Add rounded border */
     overflow: hidden; /* Hide overflow content */
     background-color: #f0f0f0;
+    float: left;
 }
 
-.search input[type="text"] {
+.searchfield input[type="text"] {
     border: none; /* Remove border */
     padding: 5px; /* Add padding */
     width: 100%; /* Make input element fill parent container */
     box-sizing: border-box; /* Include padding and border in element width */
     text-align: center;
     border-radius: 20px;
+}
+
+.searchicon {
+    float: left;
+    text-align: center;
 }
 
 
