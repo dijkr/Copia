@@ -10,7 +10,8 @@ use Statamic\View\View;
 class ProductController extends Controller
 {
     // Get products, grouped per subcategory
-    public function showGroupedProducts (Request $request) {
+    public function showGroupedProducts(Request $request)
+    {
 
         // Find the promotions
         $categorySlug = basename($request->getRequestUri());
@@ -20,26 +21,28 @@ class ProductController extends Controller
 
         // Group products by subcategory
         $products = Product::whereHas('category', function ($query) use ($categorySlug) {
-            $query->where('slug', $categorySlug); })->get();
-          $groupedProducts = $products->groupBy('Subcategory')->mapWithKeys(function ($products, $key) {
-              $subcategory = json_decode($key, true);
-              $name = $subcategory['name'];
-              return [$name => $products];
-          });
+            $query->where('slug', $categorySlug);
+        })->get();
+        $groupedProducts = $products->groupBy('Subcategory')->mapWithKeys(function ($products, $key) {
+            $subcategory = json_decode($key, true);
+            $name = $subcategory['name'];
+            return [$name => $products];
+        });
         return View::make('producten')
             ->layout('layout')
             ->with(['groupedProducts' => $groupedProducts,
-                    'category' => $category
+                'category' => $category
             ]);
     }
 
     // Get one product
-    public function showProduct (Request $request) {
+    public function showProduct(Request $request)
+    {
         // Find the product
         $product = basename($request->getRequestUri());
         // Get the product data
         $product = Product::where('slug', $product)->first();
-        // Get the promotions data
+        // Get the category data
         $category = $product->Category;
 
         return View::make('product')
@@ -50,7 +53,15 @@ class ProductController extends Controller
     }
 
     // Search products
-    public function searchProduct (request $request) {
-
+    public function searchProduct($keyword)
+    {
+        // Database query
+        $search = Product::where('Title', 'LIKE', '%' . $keyword . '%')->get();
+        dd($search);
+        return View::make('producten')
+            ->layout('layout')
+            ->with(['search' => $search
+            ]);
     }
+
 }

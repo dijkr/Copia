@@ -28,9 +28,15 @@
     {{# SEARCH #}}
     <div class="search-pt">
     {{# SEARCHFIELD #}}
+        <form method="POST" action="search">
         <div class="searchfield"><input type="text" placeholder="Zoeken.."></div>
     {{# SEARCH ICON #}}
-        <div class="searchicon"><a href="#"><i class="fa-solid fa-magnifying-glass fa-rotate-90" style="color: #ffffff;"></i></a></div>
+        <div class="searchicon">
+            <button type="submit" style="background: none; border: none;">
+                <i class="fa-solid fa-magnifying-glass fa-rotate-90" style="color: #ffffff;"></i>
+        </button>
+        </div>
+        </form>
     </div>
 
     {{# ACCOUNT #}}
