@@ -53,14 +53,21 @@ class ProductController extends Controller
     }
 
     // Search products
-    public function searchProduct($keyword)
+    public function searchProduct(Request $request)
     {
         // Database query
-        $search = Product::where('Title', 'LIKE', '%' . $keyword . '%')->get();
-        dd($search);
-        return View::make('producten')
+        $keyword = $request->input('keyword');
+        $products = Product::where('Title', 'LIKE', '%' . $keyword . '%')->get();
+
+        $searchResults = $products->groupBy('Subcategory')->mapWithKeys(function ($products, $key) {
+            $subcategory = json_decode($key, true);
+            $name = $subcategory['name'];
+            return [$name => $products];
+        });
+
+        return View::make('searchresults')
             ->layout('layout')
-            ->with(['search' => $search
+            ->with(['searchResults' => $searchResults
             ]);
     }
 

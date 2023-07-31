@@ -1,0 +1,32 @@
+<section>
+    <div class="grid-products-1">
+
+        {{# SHOW THE SUBCATEGORY AND ITS PRODUCTS #}}
+        {{ foreach:searchResults }}
+            <div class="grid-pd-cat-1">
+                {{# SHOW THE SUBCATEGORY #}}
+                <div class="grid-item-products-1">
+                    <div class="cat">
+                        <h4> {{ key }} </h4>
+                    </div>
+                </div>
+
+                {{# SHOW THE SUBCATEGORY ITS PRODUCTS #}}
+                {{ value }}
+                <a href="/product/{{ slug }}">
+                    <div class="grid-item-products-1">
+                        <div class="top">
+                            <img src="/images/{{ Image }}">
+                            € {{ Price format_number="2" }}
+                        </div>
+                        <div class="bottom">
+                            {{ Title }}
+                            {{ Shortdescription }}
+                        </div>
+                    </div>
+                </a>
+                {{ /value }}
+            </div>
+        {{ /foreach:searchResults }}
+    </div>
+</section>

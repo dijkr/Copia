@@ -27,15 +27,16 @@
 
     {{# SEARCH #}}
     <div class="search-pt">
-    {{# SEARCHFIELD #}}
-        <form method="POST" action="search">
-        <div class="searchfield"><input type="text" placeholder="Zoeken.."></div>
-    {{# SEARCH ICON #}}
-        <div class="searchicon">
-            <button type="submit" style="background: none; border: none;">
-                <i class="fa-solid fa-magnifying-glass fa-rotate-90" style="color: #ffffff;"></i>
-        </button>
-        </div>
+         <form method="POST" class="type-1" action="search">
+             {{ csrf_field }}
+            {{# SEARCHFIELD #}}
+             <div class="searchfield"><input type="text" name="keyword" placeholder="Zoeken.."></div>
+             {{# SEARCH ICON #}}
+            <div class="searchicon">
+                <button type="submit" style="background: none; border: none;">
+                    <i class="fa-solid fa-magnifying-glass fa-rotate-90" style="color: #ffffff;"></i>
+                </button>
+            </div>
         </form>
     </div>
 
