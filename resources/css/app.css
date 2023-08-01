@@ -138,6 +138,7 @@ header {
     overflow: hidden; /* Hide overflow content */
     background-color: #f0f0f0;
     float: left;
+    /*margin-top: 10px;*/
 }
 
 .searchfield input[type="text"] {
@@ -150,8 +151,8 @@ header {
 }
 
 .searchicon {
+    align-items: center;
     float: left;
-    text-align: center;
 }
 
 
