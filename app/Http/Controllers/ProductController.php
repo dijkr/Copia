@@ -55,7 +55,7 @@ class ProductController extends Controller
     // Search products
     public function searchProduct(Request $request)
     {
-        // Database query
+        // Database query, using the keyword
         $keyword = $request->input('keyword');
         $products = Product::where('Title', 'LIKE', '%' . $keyword . '%')->get();
 
@@ -67,7 +67,8 @@ class ProductController extends Controller
 
         return View::make('searchresults')
             ->layout('layout')
-            ->with(['searchResults' => $searchResults
+            ->with(['searchResults' => $searchResults,
+                    'keyword' => $keyword
             ]);
     }
 
