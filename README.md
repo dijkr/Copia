@@ -91,6 +91,14 @@ Deze bestanden betreffen de inhoud voor CSS en Javascript.
 **Vite.config.js** <br>
 Vite leest continue wijzigingen aan app.css en app.js. Ook wordt bij een wijziging, dit in de development-webbrowser weergegeven. Zodoende hoeft de webbrowser niet handmatig te refreshen om de website te updaten na aanpassingen aan app.css en app.js.
 <hr>
+
+**CMS**
+Voor de CMS wordt gebruik gemaakt van Statamic CMS, zie https://statamic.com/.
+- Deze is toegankelijk via een eigen URL en is geintegreerd met de website.
+- Statamic is ontworpen met de Antlers template-engine. Om deze reden zijn de views 
+omgezet van Blade naar Antlers.
+
+<hr>
 <h3>Improvement</h3>
-Sugguesties en het oplossen van bekende problemen worden via de Github Issues module bijgehouden en afgewerkt.
+Sugguesties en het oplossen van bekende problemen worden via Github Issues bijgehouden en ge-update.
 <hr>

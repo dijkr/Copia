@@ -32,7 +32,7 @@ Route::get('/categorie/{category:slug}', [ProductController::class, 'showGrouped
 Route::get('/product/{product:slug}', [ProductController::class, 'showProduct']);
 
 /* SEARCH PRODUCTS */
-Route::post('search', [ProductController::class, 'searchProduct']);
+Route::post('zoekresultaten', [ProductController::class, 'searchProduct']);
 
 /* DEFAULT */
 Route::get('winkelwagen', function () {

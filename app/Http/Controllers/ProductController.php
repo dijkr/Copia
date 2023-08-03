@@ -28,6 +28,7 @@ class ProductController extends Controller
             $name = $subcategory['name'];
             return [$name => $products];
         });
+
         return View::make('producten')
             ->layout('layout')
             ->with(['groupedProducts' => $groupedProducts,

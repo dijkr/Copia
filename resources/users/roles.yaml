@@ -2,12 +2,22 @@ editor:
   title: Editor
   permissions:
     - 'access cp'
+    - 'view home entries'
+    - 'edit home entries'
+    - 'create home entries'
+    - 'publish home entries'
     - 'view promotions entries'
     - 'edit promotions entries'
     - 'create promotions entries'
     - 'publish promotions entries'
+    - 'view product entries'
+    - 'edit product entries'
+    - 'create product entries'
+    - 'publish product entries'
     - 'view banners assets'
     - 'upload banners assets'
+    - 'edit banners assets'
+    - 'rename banners assets'
 admin:
   title: Admin
   permissions:
