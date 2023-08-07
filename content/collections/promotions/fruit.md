@@ -4,5 +4,4 @@ blueprint: promotion
 title: Fruit
 updated_by: eaac8844-79f3-4e20-b2d8-406cc0cd3cbd
 updated_at: 1690486903
-banner: banner_ananas.jpg
 ---
