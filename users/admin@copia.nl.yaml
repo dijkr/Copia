@@ -1,6 +1,0 @@
-name: Admin
-super: false
-roles:
-  - admin
-id: 399bded9-2ca2-4aa7-8237-68f3c7b10328
-password_hash: $2y$10$zwcsxMMKgw/MLfdJzqCiVOtsSlBAe9i/ZemSQ8hexQkc02SNETNtO
