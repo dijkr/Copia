@@ -21,16 +21,21 @@ class PromotionController extends Controller
     // Get random promotions
     public function showRandomPromotions (Request $request)
     {
-        // Current date
-//        $date = strftime("%d-%m-%Y");
         // Get three random promotion-products
         $promotions = Promotion::with('product')
             ->where('ValidUntil', '<=', '26-06-2023')
-            ->get()
-            ->random(3);
+            ->get();
+
+        // Return the view without promotions, if $promotions is null
+        if($promotions->isEmpty()) {
+            return View::make('home')
+                ->layout('layout');
+        }
+
+        $randomPromotions = $promotions->random(3);
 
         return View::make('home')
             ->layout('layout')
-            ->with(['promotions' => $promotions ]);
+            ->with(['promotions' => $randomPromotions ]);
         }
 };

@@ -1,57 +1,63 @@
 <section>
 
-    {{# PROMOTION - CURRENT WEEK #}}
+{{# PROMOTION - CURRENT WEEK #}}
+
     {{ collection:home }}
-    <div class="aanbiedingsactie">
-{{#         <div class="aanbiedingsactie-item"> #}}
-            {{ glide }}
-            <img src="{{ banner_pm }}"/>
-            {{ /glide }}
-            <div class="text-overlay-actie">
-                <h2> {{ title }}</h2>
-                <h3> {{ subtitle }}</h3>
-                <a href="/aanbiedingen">Aanbiedingen</a>
-{{#             </div> #}}
-        </div>
-    </div>
+        {{ if published }}
+            <div class="aanbiedingsactie">
+    {{#         <div class="aanbiedingsactie-item"> #}}
+                <img src="{{ banner_pm }}"/>
+                <div class="text-overlay-actie">
+                    <h2> {{ title }}</h2>
+                    <h3> {{ subtitle }}</h3>
+                    <a href="/aanbiedingen">Aanbiedingen</a>
+    {{#             </div> #}}
+                </div>
+            </div>
+        {{ else }}
+                <p><h3>Binnenkort volgen er weer nieuwe acties!</h3></p>
+        {{ /if }}
     {{ /collection:home }}
+
 
     {{# PROMOTION - PRODUCTS #}}
     {{# PARENT #}}
     <div class="grid-actie-parent">
 
         {{# PROMOTION-PRODUCT #}}
-        {{ promotions }}
-            <div class="grid-actie">
-                <a href="/product/{{ product.slug }}">
-                    <div class="grid-actie-left">
-                        <h4>{{ promotion.product.Title }}</h4>
-                        {{ product.Shortdescription }}
-                    </div>
+        {{ if promotions }}
+            {{ promotions }}
+                <div class="grid-actie">
+                    <a href="/product/{{ product.slug }}">
+                        <div class="grid-actie-left">
+                            <h4>{{ promotion.product.Title }}</h4>
+                            {{ product.Shortdescription }}
+                        </div>
 
-                    <div class="grid-actie-right">
-                        <img src="/images/{{ product.Image }}">
-                        € {{ DiscountPrice format_number="2" }}
-                    </div>
-                </a>
-            </div>
-        {{ /promotions }}
+                        <div class="grid-actie-right">
+                            <img src="/images/{{ product.Image }}">
+                            € {{ DiscountPrice format_number="2" }}
+                        </div>
+                    </a>
+                </div>
+            {{ /promotions }}
+        {{ /if }}
     </div> {{# Closing div for grid-actie-parent #}}
 
         {{# NIEUWS #}}
         {{ collection:home }}
-        <div class="nieuws">
-            <div class="nieuws-item">
-                <img src="{{ banner_news }}"/>
-                <div class="text-overlay-nieuws">
-                    <h2> {{ title_news }} </h2>
-                    <h3> {{ short_description }} </h3>
-                    <a href="#">Volledig nieuwsbericht</a>
+            {{ if published }}
+                <div class="nieuws">
+                    <div class="nieuws-item">
+                        <img src="{{ banner_news }}"/>
+                        <div class="text-overlay-nieuws">
+                            <h2> {{ title_news }} </h2>
+                            <h3> {{ short_description }} </h3>
+                            <a href="#">Volledig nieuwsbericht</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            {{ /if }}
         {{ /collection:home }}
-
-
 
 </section>

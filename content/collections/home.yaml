@@ -5,6 +5,7 @@ revisions: false
 route: /
 slugs: false
 sort_dir: asc
+default_status: draft
 date_behavior:
   past: public
   future: private
