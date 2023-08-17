@@ -663,54 +663,67 @@ footer a {
 }
 
 /* PRODUCTS-OVERVIEW RESPONSIVE */
-@media screen and (min-width: 1400px) {
-    .grid-pd-cat-1 {
-        grid-template-columns: repeat(6, 1fr);
-        gap: 1rem;
-    }
-}
-
-@media screen and (max-width: 1399px) {
+@media screen and (min-width: 1385px) {
     .grid-pd-cat-1 {
         grid-template-columns: repeat(5, 1fr);
-        gap: 1rem;
-    }
-}
-
-@media screen and (max-width: 1399px) {
-    .grid-pd-cat-1 {
-        grid-template-columns: repeat(6, 1fr);
         gap: 1rem;
     }
 
     .grid-item-products-1 {
-        width: 12rem;
-        height: 12rem;
-
+        width: 14rem;
+        height: 14rem;
     }
 }
 
-@media screen and (max-width: 1140px) {
-    .grid-pd-cat-1 {
-        grid-template-columns: repeat(5, 1fr);
-        gap: 1rem;
-    }
-}
-
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1384px) {
     .grid-pd-cat-1 {
         grid-template-columns: repeat(4, 1fr);
         gap: 1rem;
     }
 
     .grid-item-products-1 {
-        width: 11rem;
-        height: 11rem;
-
+        width: 14rem;
+        height: 14rem;
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1140px) {
+    .grid-pd-cat-1 {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+
+    .grid-item-products-1 {
+        width: 12rem;
+        height: 14rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .grid-pd-cat-1 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .grid-item-products-1 {
+        width: 12rem;
+        height: 14rem;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .grid-pd-cat-1 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .grid-item-products-1 {
+        width: 10rem;
+        height: 16rem;
+    }
+}
+
+@media screen and (max-width: 665px) {
     .grid-pd-cat-1 {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
@@ -719,7 +732,6 @@ footer a {
     .grid-item-products-1 {
         width: 10rem;
         height: 16rem;
-
     }
 }
 
@@ -772,7 +784,7 @@ footer a {
 /* PRODUCT-BOX */
 .product-parent {
     padding: 1em;
-    width: 90%;
+    width: 100%;
 }
 
 .product-box {
