@@ -59,8 +59,7 @@ class ProductController extends Controller
         // Database query, using the keyword
         $keyword = $request->input('keyword');
         $products = Product::where('Title', 'LIKE', '%' . $keyword . '%')->get();
-
-        $searchResults = $products->groupBy('Subcategory')->mapWithKeys(function ($products, $key) {
+        $searchResults = $products->groupBy('category')->mapWithKeys(function ($products, $key) {
             $subcategory = json_decode($key, true);
             $name = $subcategory['name'];
             return [$name => $products];
@@ -69,7 +68,7 @@ class ProductController extends Controller
         return View::make('searchresults')
             ->layout('layout')
             ->with(['searchResults' => $searchResults,
-                    'keyword' => $keyword
+                    'keyword' => $keyword,
             ]);
     }
 
