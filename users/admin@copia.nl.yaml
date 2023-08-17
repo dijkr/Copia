@@ -1,0 +1,16 @@
+name: admin
+super: true
+id: 53b255e4-e4a1-4f23-b54c-d83887f604f5
+password_hash: $2y$10$XCDG6SwKt4vQQfVVF9nh2.AShPWF51A85S.dA7rIUGBl0ZSmOVHnW
+preferences:
+  collections:
+    home:
+      columns:
+        - title
+        - slug
+        - status
+    promotions:
+      columns:
+        - title
+        - slug
+        - status

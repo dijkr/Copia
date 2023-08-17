@@ -3,7 +3,7 @@ tabs:
     display: Producten
     sections:
       -
-        display: Category
+        display: Categorie
         fields:
           -
             handle: title
@@ -46,4 +46,4 @@ tabs:
             field:
               type: slug
               localizable: true
-title: Category
+title: Categorie
