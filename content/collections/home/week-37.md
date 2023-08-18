@@ -5,8 +5,8 @@ title: 'Week 37'
 subtitle: 'Aanbiedingen deze week!'
 title_news: 'Nieuws week 37'
 short_description: 'Er is veel gebeurd deze week!'
-updated_by: eaac8844-79f3-4e20-b2d8-406cc0cd3cbd
-updated_at: 1692198503
+updated_by: 53b255e4-e4a1-4f23-b54c-d83887f604f5
+updated_at: 1692317155
 banner_pm: banner_ananas.png
 banner_news: banner_food.jpeg
 ---

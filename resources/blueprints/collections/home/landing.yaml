@@ -1,10 +1,10 @@
-title: Landing
+title: Frontpage
 tabs:
   main:
     display: Main
     sections:
       -
-        display: Promotion
+        display: Frontpages
         fields:
           -
             handle: banner_pm
