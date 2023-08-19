@@ -1,9 +1,10 @@
+title: Nieuws
 tabs:
   main:
-    display: Producten
+    display: Main
     sections:
       -
-        display: Categorie
+        display: Nieuws
         fields:
           -
             handle: title
@@ -12,11 +13,17 @@ tabs:
               required: true
               validate:
                 - required
-              instructions_position: above
-              listable: hidden
-              visibility: visible
+          -
+            handle: short_description
+            field:
               input_type: text
               antlers: false
+              type: text
+              display: 'Short description'
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
               hide_display: false
           -
             handle: banner
@@ -34,8 +41,6 @@ tabs:
               instructions_position: above
               visibility: visible
               hide_display: false
-              max_files: 1
-              min_files: 1
   sidebar:
     display: Sidebar
     sections:
@@ -46,4 +51,3 @@ tabs:
             field:
               type: slug
               localizable: true
-title: Categorie

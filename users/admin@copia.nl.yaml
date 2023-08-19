@@ -14,3 +14,13 @@ preferences:
         - title
         - slug
         - status
+    categorien:
+      columns:
+        - title
+        - slug
+        - status
+    frontpage:
+      columns:
+        - title
+        - status
+        - slug

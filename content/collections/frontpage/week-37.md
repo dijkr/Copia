@@ -1,6 +1,6 @@
 ---
 id: cc665f80-1127-4235-8cd3-79dafe49f146
-blueprint: landing
+blueprint: frontpage
 title: 'Week 37'
 subtitle: 'Aanbiedingen deze week!'
 title_news: 'Nieuws week 37'
