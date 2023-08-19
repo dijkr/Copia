@@ -1,3 +1,4 @@
+title: Categoriën
 tabs:
   main:
     display: Main
@@ -46,4 +47,3 @@ tabs:
             field:
               type: slug
               localizable: true
-title: Categoriën

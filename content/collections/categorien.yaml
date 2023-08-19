@@ -2,7 +2,7 @@ title: Categoriën
 template: default
 layout: layout
 revisions: false
-route: '/category/{slug}'
+route: '/categorie/{slug}'
 sort_dir: asc
 date_behavior:
   past: public

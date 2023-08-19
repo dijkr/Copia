@@ -1,7 +1,7 @@
 <section>
 
 {{# PROMOTION - CURRENT WEEK #}}
-    {{ collection:home }}
+    {{ collection:frontpage }}
         {{ if published }}
             <div class="aanbiedingsactie">
     {{#         <div class="aanbiedingsactie-item"> #}}
@@ -14,9 +14,9 @@
                 </div>
             </div>
         {{ else }}
-                <p><h3>Binnenkort volgen er weer nieuwe acties!</h3></p>
+                <p><h3>Binnenkort volgen er nieuwe acties!</h3></p>
         {{ /if }}
-    {{ /collection:home }}
+    {{ /collection:frontpage }}
 
     {{# PROMOTION - PRODUCTS #}}
     {{# PARENT #}}
@@ -43,7 +43,7 @@
     </div> {{# Closing div for grid-actie-parent #}}
 
         {{# NIEUWS #}}
-        {{ collection:home }}
+        {{ collection:frontpage }}
             {{ if published }}
                 <div class="nieuws">
                     <div class="nieuws-item">
@@ -56,6 +56,6 @@
                     </div>
                 </div>
             {{ /if }}
-        {{ /collection:home }}
+        {{ /collection:frontpage }}
 
 </section>
