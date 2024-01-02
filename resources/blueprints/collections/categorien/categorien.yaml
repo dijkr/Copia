@@ -22,7 +22,7 @@ tabs:
           -
             handle: banner
             field:
-              mode: list
+              mode: grid
               container: banners
               restrict: false
               allow_uploads: true
@@ -37,6 +37,8 @@ tabs:
               hide_display: false
               max_files: 1
               min_files: 1
+              validate:
+                - required
   sidebar:
     display: Sidebar
     sections:

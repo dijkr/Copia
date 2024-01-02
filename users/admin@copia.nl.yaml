@@ -24,3 +24,14 @@ preferences:
         - title
         - status
         - slug
+  nav:
+    top_level:
+      'top_level::dashboard': '@hide'
+    content:
+      'content::navigation': '@hide'
+      'content::taxonomies': '@hide'
+      'content::globals': '@hide'
+    fields:
+      'fields::fieldsets': '@hide'
+    tools: '@hide'
+  start_page: collections
