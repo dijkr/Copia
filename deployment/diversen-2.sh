@@ -20,15 +20,15 @@ setsebool -P httpd_can_network_connect_db on
 
 # Optimaliseren applicatie
 cd /var/www/html/copia.nl
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
+php please stache:warm
 php artisan storage:link
 rm node_modules/ -rf
 npm install
 npm run build
 composer install --optimize-autoloader --no-dev
-php artisan config:cache
-php artisan route:cache
-php artisan view:cache
-php please stache:warm
 
 # Herladen Apache-configuratie
 systemctl reload httpd

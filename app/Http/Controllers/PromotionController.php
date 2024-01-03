@@ -23,7 +23,7 @@ class PromotionController extends Controller
     {
         // Get three random promotion-products
         $promotions = Promotion::with('product')
-            ->where('ValidUntil', '<=', '26-06-2023')
+            ->where('ValidUntil', '<=', '31-12-2034')
             ->get();
 
         // Return the view without promotions, if $promotions is null
