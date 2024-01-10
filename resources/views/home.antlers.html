@@ -26,9 +26,9 @@
         {{ if promotions }}
             {{ promotions }}
                 <div class="grid-actie">
-                    <a href="/{{ category }}/{{ product.slug }}">
+                    <a href="/{{ product.category.slug }}/{{ product.slug }}">
                         <div class="grid-actie-left">
-                            <h4>{{ promotion.product.Title }}</h4>
+                            <h4>{{ product.Title }}</h4>
                             {{ product.Shortdescription }}
                         </div>
 
