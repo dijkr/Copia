@@ -33,7 +33,7 @@ Route::get('/cms/collections', 'StatamicController@collections');
 Route::get('/cms/assets','AssetsController@index');
 
 /* PRODUCT - ONE PRODUCT */
-Route::get('/{category:slug}/{product:slug}', [ProductController::class, 'showProduct']);
+Route::get('/product/{product:slug}', [ProductController::class, 'showProduct']);
 /* This route somehow handles /cms/collections */
 
 /* SEARCH PRODUCTS */
