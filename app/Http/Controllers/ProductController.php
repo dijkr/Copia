@@ -32,7 +32,8 @@ class ProductController extends Controller
         return View::make('producten')
             ->layout('layout')
             ->with(['groupedProducts' => $groupedProducts,
-                'category' => $category
+                'category' => $category,
+                'categorySlug' => $categorySlug,
             ]);
     }
 
@@ -45,13 +46,13 @@ class ProductController extends Controller
         $product = Product::where('slug', $product)->first();
         // Get the category data
         $category = $product->Category;
-
+        $categorySlug = $category->slug;
         return View::make('product')
             ->layout('layout')
             ->with(['product' => $product,
                 'category' => $category
             ]);
-    }
+            }
 
     // Search products
     public function searchProduct(Request $request)

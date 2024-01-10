@@ -19,7 +19,7 @@ class CategoryController extends Controller
             ]);
     }
 
-    // Get information about a promotions
+    // Get information about promotions
     public function categoryData (Request $request) {
         $category = basename($request->getRequestUri());
         $categoryData = Category::where('slug', $category)->first();

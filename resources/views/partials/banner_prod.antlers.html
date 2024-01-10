@@ -1,0 +1,16 @@
+{{ collection:categorien :slug:is="segment_1" }}
+        <div class="productbanner">
+            <div class="productbanner-item">
+                {{ if banner }}
+                    {{# Banner from the CMS #}}
+                    <img src="{{ banner }}">
+                {{ else }}
+                    {{# Banner placeholder from the database #}}
+                    <img src='/images/banners/{{ category.banner }}'>
+                {{ /if }}
+                <div class="productbanner-text">
+                    <h1> {{ category.name }} </h1>
+                </div>
+            </div>
+        </div>
+{{ /collection:categorien :slug:is="segment_1" }}

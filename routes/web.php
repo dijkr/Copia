@@ -29,7 +29,7 @@ Route::get('aanbiedingen', [PromotionController::class, 'showPromotions']);
 Route::get('/categorie/{category:slug}', [ProductController::class, 'showGroupedProducts']);
 
 /* PRODUCT - ONE PRODUCT */
-Route::get('/product/{product:slug}', [ProductController::class, 'showProduct']);
+Route::get('/{category:slug}/{product:slug}', [ProductController::class, 'showProduct']);
 
 /* SEARCH PRODUCTS */
 Route::post('zoekresultaten', [ProductController::class, 'searchProduct']);
