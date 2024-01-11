@@ -28,12 +28,9 @@ Route::get('aanbiedingen', [PromotionController::class, 'showPromotions']);
 /* PRODUCTS - OVERVIEW GROUPED BY CATEGORY */
 Route::get('/categorie/{category:slug}', [ProductController::class, 'showGroupedProducts']);
 
-/* STATAMIC - CMS  THIS IS A FIX, THIS ROUTE IS NORMALLY NOT NEEDED */
-Route::get('/cms/collections', 'StatamicController@collections');
-Route::get('/cms/assets','AssetsController@index');
-
 /* PRODUCT - ONE PRODUCT */
 Route::get('/product/{product:slug}', [ProductController::class, 'showProduct']);
+//    ->where('category', '(?!cms).*');
 /* This route somehow handles /cms/collections */
 
 /* SEARCH PRODUCTS */
