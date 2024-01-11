@@ -4,5 +4,5 @@ blueprint: categorieen
 title: Frisdrank
 banner: categorie_banners/freshdrinks.jpg
 updated_by: 53b255e4-e4a1-4f23-b54c-d83887f604f5
-updated_at: 1704754126
+updated_at: 1705005861
 ---
