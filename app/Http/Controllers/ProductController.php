@@ -38,21 +38,21 @@ class ProductController extends Controller
     }
 
     // Get one product
-    public function showProduct(Request $request)
+    public function showProduct($categorySlug, $productSlug)
     {
-        // Find the product
-        $product = basename($request->getRequestUri());
         // Get the product data
-        $product = Product::where('slug', $product)->first();
+        $product = Product::where('slug', $productSlug)->first();
+
         // Get the category data
         $category = $product->Category;
-        $categorySlug = $category->slug;
+
         return View::make('product')
             ->layout('layout')
-            ->with(['product' => $product,
+            ->with([
+                'product' => $product,
                 'category' => $category
             ]);
-            }
+    }
 
     // Search products
     public function searchProduct(Request $request)

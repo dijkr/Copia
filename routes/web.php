@@ -29,8 +29,9 @@ Route::get('aanbiedingen', [PromotionController::class, 'showPromotions']);
 Route::get('/categorie/{category:slug}', [ProductController::class, 'showGroupedProducts']);
 
 /* PRODUCT - ONE PRODUCT */
-Route::get('/{category.slug}/{product:slug}', [ProductController::class, 'showProduct'])
+Route::get('/{category}/{product}', [ProductController::class, 'showProduct'])
     ->where('category', '(?!cms).*');
+
 /* This route somehow handles /cms/* and therefor explicit excluded */
 
 /* SEARCH PRODUCTS */
