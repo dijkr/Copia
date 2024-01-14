@@ -57,11 +57,13 @@ class ProductController extends Controller
     // Search products
     public function searchProduct(Request $request)
     {
+
         // Database query, using the keyword
         $keyword = $request->input('keyword');
         $products = Product::with('category')
             ->where('Title', 'LIKE', '%' . $keyword . '%')
             ->get();
+
         $searchResults = $products->groupBy('category')->mapWithKeys(function ($products, $key) {
             $subcategory = json_decode($key, true);
             $name = $subcategory['name'];

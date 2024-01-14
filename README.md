@@ -3,12 +3,15 @@
 <h3>Development system</h3>
 
 - Proxmox (o.a. back-ups, snapshots)
-- AlmaLinux 9.1
-- Apache 2.4.53
-- MariaDB
-- PHP 8.0.27
+- Rocky Linux 9.3
+- Apache 2.4.57
+- MariaDB 10.5.22
+- PHP 8.0.30
 - PHPStorm 2022.3.2
-- Laravel 9.52.7
+- Laravel 9.52.16
+- Composer 2.6.6
+  NPM 8.19.4
+  NodeJS v16.20.2
 - Vite 4.3.5
 - Statamic 4 CMS
 - Github
@@ -16,8 +19,8 @@
 - NoMachine for remote GUI via NX
 - Putty for remote CLI via SSH
 
-Het project is gestart door het installeren van de benodigde software. 
-Vervolgens is met Composer het project opgestart. Hiernaar zijn er
+Het project is gestart door het installeren van LAMP-stack en development tools. 
+Vervolgens is met Composer het project opgestart. Hierna zijn er
 models en controllers aangemaakt met Artisan.
 
 <hr>
